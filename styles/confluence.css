@@ -1,0 +1,189 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                ESSENTIAL KAOS CONFLUENCE 5.x REMIXED THEME                 */
+/*                                                                            */
+/* ************************************************************************** */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic&subset=latin,cyrillic);
+
+/* ALL PAGES */
+
+#main .clear {
+  display:none;
+}
+
+.panel, #content .panel { 
+  background-color: #F9F9F9; 
+}
+
+.wiki-content a, .wiki-content a:link, .wiki-content a:visited, .wiki-content a:focus, .wiki-content a:hover, .wiki-content a:active { 
+  text-decoration: underline; 
+}
+
+body { 
+  font-family: "Open Sans"; 
+}
+
+i, cite, em, var, address, dfn { 
+  font-family: "Open Sans"; 
+}
+
+strong, b { 
+  font-family: "Open Sans"; 
+  font-weight: 600; 
+}
+
+.wiki-content h1, .panel h1, .panelMacro h1 { 
+  font-weight: 300; 
+  font-size: 2.4em; 
+  color: #999; 
+  margin-top: 1.2em; 
+}
+
+.wiki-content h2, .panel h2, .panelMacro h2 { 
+  font-weight: 300; 
+  border-bottom: none; 
+  color: #888; 
+  font-size: 2.0em; 
+  margin-top: 1.2em; 
+}
+
+.wiki-content h3, .panel h3, .panelMacro h3 { font-weight: 300; color: #888; font-size: 1.6em; margin-top: 1.2em; margin-bottom: 0.4em; }
+.wiki-content h4, .panel h4, .panelMacro h4 { font-weight: 300; color: #666; font-size: 1.4em; margin-top: 1.2em; margin-bottom: 0.4em; }
+.wiki-content h5, .panel h5, .panelMacro h5 { font-weight: 300; color: #666; font-size: 1.2em; margin-top: 1.2em; margin-bottom: 0.4em; }
+.wiki-content h6, .panel h6, .panelMacro h6 { font-weight: 300; color: #666; font-size: 1.2em; margin-top: 1.2em, margin-bottom: 0.4em; }
+
+#toolbar #format-dropdown .format-h1 a {
+  font-family: "Open Sans";
+} 
+
+#toolbar #format-dropdown .format-h2 a {
+  font-family: "Open Sans";
+} 
+
+
+#toolbar #format-dropdown .format-h3 a {
+  font-family: "Open Sans";
+} 
+
+
+#toolbar #format-dropdown .format-h4 a {
+  font-family: "Open Sans";
+} 
+
+
+#toolbar #format-dropdown .format-h5 a {
+  font-family: "Open Sans";
+} 
+
+
+#toolbar #format-dropdown .format-h6 a {
+  font-family: "Open Sans";
+} 
+
+#title-text { 
+  font-weight: 300;
+}
+
+.aui-message p.title { 
+  font-weight: 600; 
+}
+.aui-message.warning { 
+  background: #FFF8E2; border-color: #F0D68B; 
+}
+
+.aui-message.hint { 
+  background: #F3F6FA; border-color: #93B4D9; 
+}
+
+.recently-updated-social .update-item-details { 
+  font-size: 12px; 
+}
+.recently-updated-social .update-item { 
+  margin-top: 5px;
+}
+
+.update-items .confluence-userlink { 
+  font-weight: 600; font-size: 1.1em; 
+}
+
+.wiki-content .confluence-content-image-border { 
+  border: 1px solid #CCC; 
+} 
+
+.aui-header .aui-quicksearch input { 
+  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.3); 
+}
+
+#splitter-sidebar { 
+  background-image: none; 
+}
+
+hr { 
+  border-bottom: none; 
+}
+
+.page-metadata ul { 
+  opacity: 0.25;
+  -moz-transition: opacity 0.35s ease-in-out 0s; 
+  -webkit-transition: opacity 0.35s ease-in-out 0s;
+  -o-transition: opacity 0.35s ease-in-out 0s; 
+  transition: opacity 0.35s ease-in-out 0s; 
+}
+.page-metadata:hover ul { 
+  opacity: 1; 
+}
+
+div.panelHeader.pdl {
+ border-bottom-style: dashed; 
+}
+
+.wiki-content ol ol, .wiki-content ol ol ol ol ol, .wiki-content ol ol ol ol ol ol ol ol, .wiki-content ol ol ol ol ol ol ol ol ol ol ol { 
+  list-style-type: decimal; padding-left: 20px; 
+}
+
+.syntaxhighlighter a, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table tr, .syntaxhighlighter table tbody, .syntaxhighlighter table thead, .syntaxhighlighter table caption, .syntaxhighlighter textarea {
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace !important;
+}
+
+code, kbd, pre, .panel .panelContent pre {
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
+}
+
+table.confluenceTable th.confluenceTh > .tablesorter-header-inner > p {
+  font-weight: 600;
+}
+
+.plugin_pagetree_children_span.plugin_pagetree_current a {
+  font-weight: 600!important;
+}
+
+.wiki-content .confluence-content-image-border {
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+
+.jira-issue, .unknown-jira-issue {
+  padding: 4px;
+}
+
+.aui-button.aui-button-primary.aui-style {
+  font-weight: 600;
+}
+
+.wiki-content table.tablesorter > thead > tr > th {
+  font-weight: 600;
+}
+
+/* BUGFIXES  */
+#wysiwyg iframe, #preview iframe {
+  min-height: 100%;
+}
+
+#footer .footer-body {
+  min-height: 0px;
+}
+
+.office-document a { 
+  text-decoration: none; 
+}

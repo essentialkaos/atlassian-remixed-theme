@@ -1,0 +1,450 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                  ESSENTIAL KAOS JIRA 6.x REMIXED THEME                     */
+/*                                                                            */
+/* ************************************************************************** */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic&subset=latin,cyrillic);
+
+/* ALL PAGES */
+
+body {
+  font-family: "Open Sans";
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+pre, textarea, .wiki-textfield, 
+form.aui .wiki-textarea, 
+form.aui .wiki-textfield, 
+div.wiki-edit .preformatted, 
+.preformatted, 
+div.wiki-edit div.code, 
+div.code,
+code, kbd, samp {
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
+}
+
+tt {
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
+  background: #F5F5F5 none repeat scroll 0% 0%;
+  border: 1px solid #CCC;
+  border-radius: 2px;
+  padding: 0 3px;
+}
+
+.aui-theme-default h1, 
+.aui-theme-default h2, 
+.aui-theme-default h3, 
+.aui-theme-default h4, 
+.aui-theme-default h5 {
+  color: #666;
+}
+
+.aui-theme-default h1 {
+  font-weight: 100;
+}
+
+.aui-header .aui-quicksearch input[type='text'] {
+  background: #333;
+  -webkit-transition: background-color 250ms ease-out;
+  -moz-transition: background-color 250ms ease-out;
+  -o-transition: background-color 250ms ease-out;
+  -ms-transition: background-color 250ms ease-out;
+  transition: background-color 250ms ease-out;
+}
+
+.aui-header .aui-quicksearch input[type='text'][type='text']:focus {
+  background:#fff;
+  color:#333;
+}
+
+.order-dropdown .aui-list-section-footer {
+  color: #999;
+}
+
+table.aui>thead>tr>th, 
+table.aui>tbody>tr>th, 
+table.aui>thead>tr>td, 
+table.aui>tbody>tr>td, 
+table.aui>tfoot>tr>td {
+  color: #555;
+}
+
+/* ISSUE */
+
+.issue-header .issue-header-content>.aui-page-header {
+  padding: 12px 20px 0 20px;
+}
+
+.ka .issue-header .issue-header-content>.aui-page-header {
+  padding-bottom: 8px;
+}
+
+.issue-header-content .aui-nav-breadcrumbs>li+li:before {
+  top: 6px;
+  left: -2px;
+}
+
+#viewissuesidebar {
+  width: 420px;
+}
+
+h2.toggle-title {
+  color: #888;
+}
+
+.issue-body-content .module>.mod-header>h1, 
+.issue-body-content .module>.mod-header>h2, 
+.issue-body-content .module>.mod-header>h3, 
+.issue-body-content .module>.mod-header>h4, 
+.issue-body-content .module>.mod-header>h5, 
+.issue-body-content .module>.mod-header>h6
+{
+  font-weight: 100;
+}
+
+#summary-val .text {
+  font-weight: 100;
+}
+
+#watching-toggle,
+#watching-label,
+#vote-toggle,
+#vote-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #666;
+}
+
+.aui-badge {
+  background: #ddd;
+  padding: 2px 5px 3px 4px;
+}
+
+.aui-badge.vote-state-on, 
+.aui-badge.watch-state-on {
+  background-color: #999;
+}
+
+.icon {
+  vertical-align: middle;
+}
+
+.jira-icon-add {
+  margin-top: -13px;
+}
+
+.aui-icon-small, .aui-icon-large {
+  vertical-align: middle;
+}
+
+blockquote, 
+.action-body blockquote {
+  border-left: 1px solid #ccc;
+  color: #666;
+  font-style: italic;
+}
+
+.issueaction-viewworkflow {
+  font-size: 13px;
+  color: #888;
+}
+
+.links-list+.links-list {
+  border-top: 1px dotted #ccc;
+}
+
+.links-list dd {
+  border-top: 1px dotted #ddd;
+}
+
+div.preformattedContent pre, 
+div.codeContent pre {
+  word-wrap: break-word;
+  max-height: none;
+}
+
+/* STATUSES */
+
+#status-val span[data-tooltip*="Closed"] {
+  background-color: #AAA !important;
+  border-color: #AAA !important;
+  color: #fff !important;
+}
+
+#status-val span[data-tooltip*="Ready For Test"] {
+  background-color: #40beab !important;
+  border-color: #40beab !important;
+  color: #fff !important;
+}
+
+#status-val span[data-tooltip*="Decomposition"] {
+  background-color: #e56550 !important;
+  border-color: #e56550 !important;
+  color: #fff !important;
+}
+
+#status-val span[data-tooltip*="Delayed"] {
+  background-color: #9672be !important;
+  border-color: #9672be !important;
+  color: #fff !important;
+}
+
+span[data-tooltip*="Closed"] {
+  color: #777 !important;
+  border-color: #d5d5d5 !important;
+}
+
+span[data-tooltip*="Delayed"] {
+  color: #815fbc !important;
+  border-color: #e1d4fc !important;
+}
+
+span[data-tooltip*="Decomposition"] {
+  color: #c83e2b !important;
+  border-color: #deb3ad !important;
+}
+
+span[data-tooltip*="Ready For Test"] {
+  color: #1c9d89 !important;
+  border-color: #ade2e7 !important;
+}
+
+/* SUBTASKS */
+
+#issuetable>tbody>tr:first-child>td, .issue-table>tbody>tr:first-child>td, 
+#issuetable>tbody>tr:first-child>th, .issue-table>tbody>tr:first-child>th, 
+#issuetable>tfoot>tr:first-child>td, .issue-table>tfoot>tr:first-child>td {
+  border-top: 1px dotted #ccc;
+}
+
+#issuetable .stsequence, .issue-table .stsequence {
+  color: #888;
+}
+
+/* COMMENTS */
+
+.action-details {
+  color: #999;
+}
+
+img.emoticon { 
+  border: none; 
+  padding: 0; 
+  margin-top:0; 
+  margin-bottom: 4px; 
+}
+
+.issue-data-block.focused {
+  background-color: #F0F7FD;
+}
+
+.issue-data-block {
+  border-bottom: 1px dotted #ccc;
+}
+
+.movedcomment {
+  border-top: 1px dotted #dcdcdc;
+}
+
+.commentreplyarea {
+  padding-top: 8px;
+}
+
+.textcommentreply {
+  font-size: 14px;
+}
+
+.ops {
+  padding: 6px 0 0 0;
+}
+
+/* TABS */
+
+ul.tabs li strong, 
+ul.tabs li.tab-title {
+  font-weight: normal;
+}
+
+.tabwrap>ul.tabs>li a, 
+.tabwrap>ul.tabs>li a:link, 
+.tabwrap>ul.tabs>li a:visited {
+  color: #888;
+}
+
+.tabwrap>.tabs.horizontal>li a:hover {
+  color: #333;
+}
+
+ul.labels li .lozenge {
+  overflow-x: visible;
+}
+
+ul.labels {
+  margin: 0;
+}
+
+/* ATTACHMENTS */
+
+#attachment_thumbnails .attachment-content {
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.webkit .jira-multi-select>.representation .item-row .item-delete:after {
+  bottom: 0px;
+}
+
+/* DEVELOPMENT */
+
+.rolling-container {
+  font-size: 13px;
+  color: #AAA;
+}
+
+/* PROJECTS LIST */
+
+table.aui>tbody>tr, 
+table.aui>tfoot>tr {
+  border-bottom: 1px dotted#ccc;
+}
+
+.colour-bar {
+  border-top: 10px solid #3c78b5;
+}
+
+/* ISSUE LIST */
+
+.issue-list>li {
+  border-bottom: 1px dotted #ccc;
+}
+
+#issuetable>thead>tr>th, 
+.issue-table>thead>tr>th, 
+#issuetable>tbody>tr>th, 
+.issue-table>tbody>tr>th, 
+#issuetable>thead>tr>td, 
+.issue-table>thead>tr>td, 
+#issuetable>tbody>tr>td, 
+.issue-table>tbody>tr>td, 
+#issuetable>tfoot>tr>td, 
+.issue-table>tfoot>tr>td {
+  border-bottom: 1px dotted #ccc;
+}
+
+#search-header-view .header-section-primary h1 {
+  font-weight: 100;
+}
+
+.query-component .search-container[data-mode="advanced"] .atlassian-autocomplete label[for="advanced-search"] .icon {
+  top: 9px;
+  left: 7px;
+}
+
+/* ADMINS PART */
+
+.aui-navgroup-horizontal .aui-nav>li a, 
+.aui-navgroup-vertical .aui-nav>li>a, 
+.aui-nav-vertical>li>a {
+  color: #666;
+}
+
+.aui-navgroup-horizontal 
+.aui-nav>li a:focus, 
+.aui-navgroup-vertical 
+.aui-nav>li>a:focus, 
+.aui-nav-vertical>li>a:focus, 
+.aui-navgroup-horizontal 
+.aui-nav>li a:hover, 
+.aui-navgroup-vertical 
+.aui-nav>li>a:hover, 
+.aui-nav-vertical>li>a:hover {
+  color: #999;
+}
+
+#upm-container h4 {
+  font-weight: 400;
+}
+
+.pb_description {
+  font-weight: 100;
+  color: #666;
+}
+
+.pb_section {
+  margin: 8px 0 8px 0;
+}
+
+.pb_barborder {
+  border: none;
+  background-color: #EEE;
+}
+
+td.pb_barlefttd {
+  background-color: #4693E1;
+}
+
+div.pb_border {
+  border: 1px #CCC solid;
+}
+
+/* THREADED COMMENTS PLUGIN */
+
+.upvote {
+  padding-right: 4px;
+}
+
+.commentreply {
+  line-height: 3;
+  font-weight: bold;
+}
+
+/* DND PLUGIN */
+
+.issue-drop-zone {
+  border: 1px dashed #CCC;
+}
+
+.issue-drop-zone__text {
+  color: #888;
+  font-weight: 300;
+}
+
+.issue-drop-zone__message {
+  color: #BBB;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* ZYPHIR PLUGIN */
+
+.project-config-version-description {
+  font-size: 13px;
+  color: #444;
+}
+
+.versionBanner-name {
+  font-weight: normal;
+}
+
+.versionBanner-description {
+  font-size: 14px;
+  font-style: italic;
+  color: #444;
+}
+
+.versionBanner-releaseDate {
+  color: #666;
+}
+
+.zteststep-data {
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
+}
+
+/* FIXES FIXES FIXES */
+
+/* Thank God, yet nothing there */
+
