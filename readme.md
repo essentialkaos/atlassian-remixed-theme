@@ -1,8 +1,8 @@
-### Remixed Theme for Atlassian products by EK
+## Remixed Theme for Atlassian products by EK
 
-#### Installing
+### Installing
 
-##### JIRA
+###### JIRA
 
 1. Copy `styles/jira.css` and `styles/jira-hide.css` to directory `jira-install-dir/atlassian-jira/static-assets`
 2. Using jira administator account go to `http://your.jira.url/secure/admin/EditAnnouncementBanner!default.jspa`
