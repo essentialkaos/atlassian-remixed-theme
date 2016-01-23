@@ -6,7 +6,7 @@
 
 * Copy `styles/jira.css` and `styles/jira-hide.css` to directory `jira-install-dir/atlassian-jira/static-assets`
 * Using jira administator account go to `http://your.jira.url/secure/admin/EditAnnouncementBanner!default.jspa`
-* Add this code in first line of announcement:
+* Add this code as first line of announcement:
 ```
 <link href="//your.jira.url/static-assets/jira.css" rel="stylesheet" type="text/css" />
 ```
