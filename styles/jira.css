@@ -16,12 +16,12 @@ strong, b {
   font-weight: 600;
 }
 
-pre, textarea, .wiki-textfield, 
-form.aui .wiki-textarea, 
-form.aui .wiki-textfield, 
-div.wiki-edit .preformatted, 
-.preformatted, 
-div.wiki-edit div.code, 
+pre, textarea, .wiki-textfield,
+form.aui .wiki-textarea,
+form.aui .wiki-textfield,
+div.wiki-edit .preformatted,
+.preformatted,
+div.wiki-edit div.code,
 div.code,
 code, kbd, samp {
   font-family: "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
@@ -35,10 +35,10 @@ tt {
   padding: 0 3px;
 }
 
-.aui-theme-default h1, 
-.aui-theme-default h2, 
-.aui-theme-default h3, 
-.aui-theme-default h4, 
+.aui-theme-default h1,
+.aui-theme-default h2,
+.aui-theme-default h3,
+.aui-theme-default h4,
 .aui-theme-default h5 {
   color: #666;
 }
@@ -65,12 +65,18 @@ tt {
   color: #999;
 }
 
-table.aui>thead>tr>th, 
-table.aui>tbody>tr>th, 
-table.aui>thead>tr>td, 
-table.aui>tbody>tr>td, 
+table.aui>thead>tr>th,
+table.aui>tbody>tr>th,
+table.aui>thead>tr>td,
+table.aui>tbody>tr>td,
 table.aui>tfoot>tr>td {
   color: #555;
+}
+
+/* GADGETS */
+
+.search-results-dashboard-item-issue-table {
+  font-size: 13px;
 }
 
 /* ISSUE */
@@ -96,11 +102,11 @@ h2.toggle-title {
   color: #888;
 }
 
-.issue-body-content .module>.mod-header>h1, 
-.issue-body-content .module>.mod-header>h2, 
-.issue-body-content .module>.mod-header>h3, 
-.issue-body-content .module>.mod-header>h4, 
-.issue-body-content .module>.mod-header>h5, 
+.issue-body-content .module>.mod-header>h1,
+.issue-body-content .module>.mod-header>h2,
+.issue-body-content .module>.mod-header>h3,
+.issue-body-content .module>.mod-header>h4,
+.issue-body-content .module>.mod-header>h5,
 .issue-body-content .module>.mod-header>h6
 {
   font-weight: 100;
@@ -124,7 +130,7 @@ h2.toggle-title {
   padding: 2px 5px 3px 4px;
 }
 
-.aui-badge.vote-state-on, 
+.aui-badge.vote-state-on,
 .aui-badge.watch-state-on {
   background-color: #999;
 }
@@ -141,7 +147,7 @@ h2.toggle-title {
   vertical-align: middle;
 }
 
-blockquote, 
+blockquote,
 .action-body blockquote {
   border-left: 1px solid #ccc;
   color: #666;
@@ -161,10 +167,11 @@ blockquote,
   border-top: 1px dotted #ddd;
 }
 
-div.preformattedContent pre, 
+div.preformattedContent pre,
 div.codeContent pre {
-  word-wrap: break-word;
   max-height: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 /* STATUSES */
@@ -176,12 +183,6 @@ span[data-tooltip*="Closed"] {
 }
 
 span[data-tooltip*="Ready For Test"] {
-  background-color: #40beab !important;
-  border-color: #40beab !important;
-  color: #fff !important;
-}
-
-span[data-tooltip*="Decomposition"] {
   background-color: #e56550 !important;
   border-color: #e56550 !important;
   color: #fff !important;
@@ -207,20 +208,23 @@ span.aui-lozenge-subtle[data-tooltip*="Delayed"] {
   border-color: #e1d4fc !important;
 }
 
-span.aui-lozenge-subtle[data-tooltip*="Decomposition"] {
+span.aui-lozenge-subtle[data-tooltip*="Ready For Test"] {
   color: #c83e2b !important;
   border-color: #deb3ad !important;
 }
 
-span.aui-lozenge-subtle[data-tooltip*="Ready For Test"] {
-  color: #1c9d89 !important;
-  border-color: #ade2e7 !important;
+ul.labels li .lozenge {
+  background: #f2f2f2;
+  border: 1px solid #bbb;
+  color: #555;
+  font-size: 13px;
+  padding: 3px 4px;
 }
 
 /* SUBTASKS */
 
-#issuetable>tbody>tr:first-child>td, .issue-table>tbody>tr:first-child>td, 
-#issuetable>tbody>tr:first-child>th, .issue-table>tbody>tr:first-child>th, 
+#issuetable>tbody>tr:first-child>td, .issue-table>tbody>tr:first-child>td,
+#issuetable>tbody>tr:first-child>th, .issue-table>tbody>tr:first-child>th,
 #issuetable>tfoot>tr:first-child>td, .issue-table>tfoot>tr:first-child>td {
   border-top: 1px dotted #ccc;
 }
@@ -235,15 +239,17 @@ span.aui-lozenge-subtle[data-tooltip*="Ready For Test"] {
   color: #999;
 }
 
-img.emoticon { 
-  border: none; 
-  padding: 0; 
-  margin-top:0; 
-  margin-bottom: 4px; 
+img.emoticon {
+  border: none;
+  padding: 0;
+  margin-top:0;
+  margin-bottom: 4px;
 }
 
-.issue-data-block.focused {
-  background-color: #F0F7FD;
+.issue-data-block:hover, .issue-data-block.focused {
+  background-color: #f5f5f5;
+  border-left: 2px solid #ccc;
+  padding-left: 8px;
 }
 
 .issue-data-block {
@@ -268,13 +274,13 @@ img.emoticon {
 
 /* TABS */
 
-ul.tabs li strong, 
+ul.tabs li strong,
 ul.tabs li.tab-title {
   font-weight: normal;
 }
 
-.tabwrap>ul.tabs>li a, 
-.tabwrap>ul.tabs>li a:link, 
+.tabwrap>ul.tabs>li a,
+.tabwrap>ul.tabs>li a:link,
 .tabwrap>ul.tabs>li a:visited {
   color: #888;
 }
@@ -311,7 +317,7 @@ ul.labels {
 
 /* PROJECTS LIST */
 
-table.aui>tbody>tr, 
+table.aui>tbody>tr,
 table.aui>tfoot>tr {
   border-bottom: 1px dotted#ccc;
 }
@@ -326,15 +332,15 @@ table.aui>tfoot>tr {
   border-bottom: 1px dotted #ccc;
 }
 
-#issuetable>thead>tr>th, 
-.issue-table>thead>tr>th, 
-#issuetable>tbody>tr>th, 
-.issue-table>tbody>tr>th, 
-#issuetable>thead>tr>td, 
-.issue-table>thead>tr>td, 
-#issuetable>tbody>tr>td, 
-.issue-table>tbody>tr>td, 
-#issuetable>tfoot>tr>td, 
+#issuetable>thead>tr>th,
+.issue-table>thead>tr>th,
+#issuetable>tbody>tr>th,
+.issue-table>tbody>tr>th,
+#issuetable>thead>tr>td,
+.issue-table>thead>tr>td,
+#issuetable>tbody>tr>td,
+.issue-table>tbody>tr>td,
+#issuetable>tfoot>tr>td,
 .issue-table>tfoot>tr>td {
   border-bottom: 1px dotted #ccc;
 }
@@ -350,23 +356,23 @@ table.aui>tfoot>tr {
 
 /* ADMINS PART */
 
-.aui-navgroup-horizontal .aui-nav>li a, 
-.aui-navgroup-vertical .aui-nav>li>a, 
+.aui-navgroup-horizontal .aui-nav>li a,
+.aui-navgroup-vertical .aui-nav>li>a,
 .aui-nav-vertical>li>a {
   color: #666;
 }
 
-.aui-navgroup-horizontal 
-.aui-nav>li a:focus, 
-.aui-navgroup-vertical 
-.aui-nav>li>a:focus, 
-.aui-nav-vertical>li>a:focus, 
-.aui-navgroup-horizontal 
-.aui-nav>li a:hover, 
-.aui-navgroup-vertical 
-.aui-nav>li>a:hover, 
+.aui-navgroup-horizontal
+.aui-nav>li a:focus,
+.aui-navgroup-vertical
+.aui-nav>li>a:focus,
+.aui-nav-vertical>li>a:focus,
+.aui-navgroup-horizontal
+.aui-nav>li a:hover,
+.aui-navgroup-vertical
+.aui-nav>li>a:hover,
 .aui-nav-vertical>li>a:hover {
-  color: #999;
+  color: #666;
 }
 
 #upm-container h4 {
@@ -423,32 +429,19 @@ div.pb_border {
   font-size: 12px;
 }
 
-/* ZYPHIR PLUGIN */
-
-.project-config-version-description {
-  font-size: 13px;
-  color: #444;
-}
-
-.versionBanner-name {
-  font-weight: normal;
-}
-
-.versionBanner-description {
-  font-size: 14px;
-  font-style: italic;
-  color: #444;
-}
-
-.versionBanner-releaseDate {
-  color: #666;
-}
-
-.zteststep-data {
-  font-family: "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
-}
-
 /* FIXES FIXES FIXES */
 
-/* Thank God, yet nothing there */
+/* Fixed word break for text in tables */
+table.confluenceTable {
+  word-break: normal;
+}
 
+/* Fixed add subtask icon position */
+.issue-body-content .module>.mod-header .ops {
+  margin-top: -5px;
+  padding-left: 4px;
+}
+
+#view-subtasks_heading {
+  padding-bottom: 8px;
+}
