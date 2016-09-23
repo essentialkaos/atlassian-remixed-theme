@@ -73,6 +73,13 @@ table.aui>tfoot>tr>td {
   color: #555;
 }
 
+form.aui div.description {
+  color: #888;
+  font-size: 11px;
+  font-style: italic;
+  margin: 4px 0 0 0;
+}
+
 /* GADGETS */
 
 .search-results-dashboard-item-issue-table {
@@ -127,7 +134,7 @@ h2.toggle-title {
 
 .aui-badge {
   background: #ddd;
-  padding: 2px 5px 3px 4px;
+  padding: 2px 6px 3px 6px;
 }
 
 .aui-badge.vote-state-on,
@@ -154,7 +161,7 @@ blockquote,
   font-style: italic;
 }
 
-.issueaction-viewworkflow {
+.status-view, .issueaction-viewworkflow {
   font-size: 13px;
   color: #888;
 }
