@@ -182,7 +182,7 @@ h2.toggle-title {
 #vote-toggle,
 #vote-label {
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 600;
   color: #666;
 }
 
@@ -478,7 +478,7 @@ div.pb_border {
 
 .commentreply {
   line-height: 3;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* DND PLUGIN */
