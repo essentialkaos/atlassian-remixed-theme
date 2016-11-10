@@ -2,7 +2,7 @@
 
 ### Usage
 
-###### JIRA
+#### JIRA
 
 * Using jira administator account go to `http://your.jira.url/secure/admin/EditAnnouncementBanner!default.jspa`
 * Add this code as first line of announcement:
@@ -15,7 +15,7 @@
 ```
 * Save announcement
 
-###### Confluence
+#### Confluence
 
 * Go to Space Tools → Look and Feel → Stylesheet
 * Add this code to space stylesheet:
