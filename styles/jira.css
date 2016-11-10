@@ -1,10 +1,60 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                ESSENTIAL KAOS JIRA 6.3.x REMIXED THEME                     */
+/*                ESSENTIAL KAOS JIRA 6.4.x REMIXED THEME                     */
 /*                                                                            */
 /* ************************************************************************** */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic&subset=latin,cyrillic);
+/* FONTS */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'),
+       local('OpenSans-Light'),
+       url(//remixed.kaos.io/fonts/osl.woff2) format('woff2'),
+       url(//remixed.kaos.io/fonts/osl.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'),
+       local('OpenSans'),
+       url(//remixed.kaos.io/fonts/osr.woff2) format('woff2'),
+       url(//remixed.kaos.io/fonts/osr.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'),
+       local('OpenSans-Italic'),
+       url(//remixed.kaos.io/fonts/osi.woff2) format('woff2'),
+       url(//remixed.kaos.io/fonts/osi.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Bold'),
+       local('OpenSans-Bold'),
+       url(//remixed.kaos.io/fonts/osb.woff2) format('woff2'),
+       url(//remixed.kaos.io/fonts/osb.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans Bold'),
+       local('OpenSans-Bold'),
+       url(//remixed.kaos.io/fonts/osb.woff2) format('woff2'),
+       url(//remixed.kaos.io/fonts/osb.woff)  format('woff');
+}
 
 /* ALL PAGES */
 
@@ -78,6 +128,10 @@ form.aui div.description {
   font-size: 11px;
   font-style: italic;
   margin: 4px 0 0 0;
+}
+
+ul {
+  margin: 0;
 }
 
 /* GADGETS */
@@ -359,6 +413,14 @@ table.aui>tfoot>tr {
 .query-component .search-container[data-mode="advanced"] .atlassian-autocomplete label[for="advanced-search"] .icon {
   top: 9px;
   left: 7px;
+}
+
+.no-results-message h3 {
+  font-weight: 100;
+}
+
+.no-results-hint {
+  font-style: italic;
 }
 
 /* ADMINS PART */
