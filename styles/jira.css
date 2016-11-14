@@ -514,3 +514,10 @@ table.confluenceTable {
 #view-subtasks_heading {
   padding-bottom: 8px;
 }
+
+/* Fixed long names in attachments */
+#attachmentmodule,
+#descriptionmodule,
+#activitymodule {
+  word-break: break-word;
+}
