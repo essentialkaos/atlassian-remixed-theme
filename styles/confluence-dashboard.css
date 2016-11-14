@@ -1,0 +1,48 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*               ESSENTIAL KAOS CONFLUENCE 5.6.x REMIXED THEME                */
+/*                                                                            */
+/* ************************************************************************** */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(//remixed-theme.kaos.io/osl.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(//remixed-theme.kaos.io/osr.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(//remixed-theme.kaos.io/oss.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(//remixed-theme.kaos.io/osi.woff) format('woff');
+}
+
+body { 
+  font-family: "Open Sans"; 
+}
+
+i, cite, em, var, address, dfn { 
+  font-family: "Open Sans"; 
+}
+
+strong, b { 
+  font-family: "Open Sans"; 
+  font-weight: 600; 
+}
+
+#title-heading {
+  font-weight: 100;
+  color: #666;
+}
