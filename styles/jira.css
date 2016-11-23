@@ -521,3 +521,9 @@ table.confluenceTable {
 #activitymodule {
   word-break: break-word;
 }
+
+/* Fix skinny buttons size */
+.skinny .split-view .issue-header .aui-toolbar .toolbar-group .toolbar-trigger,
+.skinny .split-view .issue-header .aui-toolbar .aui-dd-parent a.aui-dd-trigger {
+  height: auto;
+}
