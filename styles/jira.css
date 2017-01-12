@@ -527,3 +527,8 @@ table.confluenceTable {
 .skinny .split-view .issue-header .aui-toolbar .aui-dd-parent a.aui-dd-trigger {
   height: auto;
 }
+
+/* Fix link window height */
+#link-issue-dialog form {
+  height: 400px;
+}
