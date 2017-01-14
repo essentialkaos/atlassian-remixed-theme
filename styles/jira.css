@@ -111,6 +111,10 @@ tt {
   color:#333;
 }
 
+.module>.mod-header+.mod-content {
+  margin-top: 10px !important;
+}
+
 .order-dropdown .aui-list-section-footer {
   color: #999;
 }
@@ -522,13 +526,38 @@ table.confluenceTable {
   word-break: break-word;
 }
 
-/* Fix skinny buttons size */
+/* Fixed skinny buttons size */
 .skinny .split-view .issue-header .aui-toolbar .toolbar-group .toolbar-trigger,
 .skinny .split-view .issue-header .aui-toolbar .aui-dd-parent a.aui-dd-trigger {
   height: auto;
 }
 
-/* Fix link window height */
+/* Fixed link window height */
 #link-issue-dialog form {
   height: 400px;
+}
+
+/* Fixed icon vertical align in prop lists */
+.property-list img {
+  vertical-align: sub;
+}
+
+/* Fixed icon vertical align in links lists */
+.links-list img {
+  vertical-align: sub;
+}
+
+/* Fixed icon vertical align in tables */
+table.aui img {
+  vertical-align: sub;
+}
+
+/* Fixed issue list items vertical align*/
+#issuetable>tbody>tr>td {
+  vertical-align: middle;
+}
+
+/* Fixed background icons */
+.aui-icon {
+  vertical-align: sub;
 }
