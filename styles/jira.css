@@ -502,6 +502,22 @@ div.pb_border {
   font-size: 12px;
 }
 
+/* STRUCTURE PLUGIN */
+
+.st-details-header {
+  background-color: #EEE;
+}
+
+.st-details-title-icon > img {
+  vertical-align: top;
+  width: 16px;
+  margin: 2px;
+}
+
+#structure .celldiv .value .s-icons > img {
+  margin-right: 2px;
+}
+
 /* FIXES FIXES FIXES */
 
 /* Fixed word break for text in tables */
@@ -555,9 +571,4 @@ table.aui img {
 /* Fixed issue list items vertical align*/
 #issuetable>tbody>tr>td {
   vertical-align: middle;
-}
-
-/* Fixed background icons */
-.aui-icon {
-  vertical-align: sub;
 }
