@@ -572,3 +572,8 @@ table.aui img {
 #issuetable>tbody>tr>td {
   vertical-align: middle;
 }
+
+/* Fixed subtask separator vertical position in issue list */
+#issuetable .parentIssue, .issue-table .parentIssue {
+  background-position-y: 4px;
+}
