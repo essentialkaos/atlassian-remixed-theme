@@ -474,6 +474,10 @@ div.pb_border {
   border: 1px #CCC solid;
 }
 
+option.imagebacked {
+  background-size: 16px;
+}
+
 /* THREADED COMMENTS PLUGIN */
 
 .upvote {
