@@ -279,3 +279,7 @@ ol.comment-threads.top-level {
 .confluence-information-macro>.title {
   margin: 0px 0 8px 0;
 }
+
+.mw-notification-verb-icon > div {
+  background-size: 16px !important;
+}
