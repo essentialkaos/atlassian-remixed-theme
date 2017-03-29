@@ -283,3 +283,20 @@ ol.comment-threads.top-level {
 .mw-notification-verb-icon > div {
   background-size: 16px !important;
 }
+
+.aui-inline-dialog-contents.contents {
+  min-height: auto !important;
+}
+
+#notifications-miniview-iframe {
+  height: 608px;
+}
+
+#mw-container .mw-notifications-list {
+  max-height: none !important;
+  height: auto !important;
+}
+
+#mw-container .mw-drilldown-container {
+  max-height: none !important;
+}
