@@ -46,3 +46,9 @@ strong, b {
   font-weight: 100;
   color: #666;
 }
+
+/* FIXES FIXES FIXES **********************************************************/
+
+.mw-notification-verb-icon > div {
+  background-size: 16px !important;
+}
