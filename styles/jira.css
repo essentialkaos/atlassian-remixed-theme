@@ -239,6 +239,10 @@ div.codeContent pre {
   word-wrap: break-word;
 }
 
+.subtask-table-container > #issuetable > tbody > .issuerow {
+  height: 52px;
+}
+
 /* STATUSES */
 
 span[data-tooltip*="Closed"] {
