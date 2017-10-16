@@ -225,11 +225,11 @@ blockquote,
 }
 
 .links-list+.links-list {
-  border-top: 1px dotted #ccc;
+  border-top: 1px solid #eee;
 }
 
 .links-list dd {
-  border-top: 1px dotted #ddd;
+  border-top: 1px solid #eee;
 }
 
 div.preformattedContent pre,
@@ -295,7 +295,7 @@ ul.labels li .lozenge {
 #issuetable>tbody>tr:first-child>td, .issue-table>tbody>tr:first-child>td,
 #issuetable>tbody>tr:first-child>th, .issue-table>tbody>tr:first-child>th,
 #issuetable>tfoot>tr:first-child>td, .issue-table>tfoot>tr:first-child>td {
-  border-top: 1px dotted #ccc;
+  border-top: 1px solid #eee;
 }
 
 #issuetable .stsequence, .issue-table .stsequence {
@@ -322,7 +322,7 @@ img.emoticon {
 }
 
 .issue-data-block {
-  border-bottom: 1px dotted #ccc;
+  border-bottom: 1px solid #eee;
 }
 
 .movedcomment {
@@ -388,7 +388,7 @@ ul.labels {
 
 table.aui>tbody>tr,
 table.aui>tfoot>tr {
-  border-bottom: 1px dotted#ccc;
+  border-bottom: 1px solid #eee;
 }
 
 .colour-bar {
@@ -398,7 +398,7 @@ table.aui>tfoot>tr {
 /* ISSUE LIST */
 
 .issue-list>li {
-  border-bottom: 1px dotted #ccc;
+  border-bottom: 1px solid #eee;
 }
 
 #issuetable>thead>tr>th,
@@ -411,7 +411,7 @@ table.aui>tfoot>tr {
 .issue-table>tbody>tr>td,
 #issuetable>tfoot>tr>td,
 .issue-table>tfoot>tr>td {
-  border-bottom: 1px dotted #ccc;
+  border-bottom: 1px solid #eee;
 }
 
 #search-header-view .header-section-primary h1 {
