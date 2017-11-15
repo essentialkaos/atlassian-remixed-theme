@@ -585,3 +585,8 @@ table.aui img {
 #issuetable .parentIssue, .issue-table .parentIssue {
   background-position-y: 4px;
 }
+
+/* Fixed wrapping for status points from sonar */
+.user-hover {
+  white-space: nowrap;
+}
