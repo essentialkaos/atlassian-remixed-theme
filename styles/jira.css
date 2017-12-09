@@ -586,7 +586,12 @@ table.aui img {
   background-position-y: 4px;
 }
 
-/* Fixed wrapping for status points from sonar */
+/* Fixed wrapping for status points from Sonar */
 .user-hover {
   white-space: nowrap;
+}
+
+/* Fixed Sonar icon position for comments */
+div.action-details > img.slack-status {
+  padding-left: 4px;
 }
