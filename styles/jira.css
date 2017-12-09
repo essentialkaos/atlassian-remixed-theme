@@ -593,5 +593,5 @@ table.aui img {
 
 /* Fixed Sonar icon position for comments */
 div.action-details > img.slack-status {
-  padding-left: 4px;
+  padding-left: 2px;
 }
