@@ -42,6 +42,10 @@ strong, b {
   font-weight: 600; 
 }
 
+a {
+  text-decoration-skip: ink;
+}
+
 #title-heading {
   font-weight: 100;
   color: #666;

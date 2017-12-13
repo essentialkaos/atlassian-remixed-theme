@@ -83,6 +83,10 @@ strong, b {
   font-weight: 600;
 }
 
+a {
+  text-decoration-skip: ink;
+}
+
 .wiki-content h1, .panel h1, .panelMacro h1 { font-weight: 300; font-size: 2.4em;  color: #999; margin-top: 1.2em; border-bottom: 1px solid #eee; }
 .wiki-content h2, .panel h2, .panelMacro h2 { font-weight: 300; border-bottom: none; color: #888; font-size: 2.0em; margin-top: 1.2em; border-bottom: 1px solid #eee; }
 .wiki-content h3, .panel h3, .panelMacro h3 { font-weight: 300; color: #888; font-size: 1.6em; margin-top: 1.2em; margin-bottom: 0.4em; }

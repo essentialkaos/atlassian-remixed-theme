@@ -66,6 +66,10 @@ strong, b {
   font-weight: 600;
 }
 
+a {
+  text-decoration-skip: ink;
+}
+
 pre, textarea, .wiki-textfield,
 form.aui .wiki-textarea,
 form.aui .wiki-textfield,
