@@ -12,8 +12,8 @@
   font-weight: 300;
   src: local('Open Sans Light'),
        local('OpenSans-Light'),
-       url(//remixed.kaos.io/fonts/osl.woff2) format('woff2'),
-       url(//remixed.kaos.io/fonts/osl.woff)  format('woff');
+       url(//remixed.kaos.st/fonts/osl.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/osl.woff)  format('woff');
 }
 
 @font-face {
@@ -22,8 +22,8 @@
   font-weight: 400;
   src: local('Open Sans'),
        local('OpenSans'),
-       url(//remixed.kaos.io/fonts/osr.woff2) format('woff2'),
-       url(//remixed.kaos.io/fonts/osr.woff)  format('woff');
+       url(//remixed.kaos.st/fonts/osr.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/osr.woff)  format('woff');
 }
 
 @font-face {
@@ -32,8 +32,8 @@
   font-weight: 400;
   src: local('Open Sans Italic'),
        local('OpenSans-Italic'),
-       url(//remixed.kaos.io/fonts/osi.woff2) format('woff2'),
-       url(//remixed.kaos.io/fonts/osi.woff)  format('woff');
+       url(//remixed.kaos.st/fonts/osi.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/osi.woff)  format('woff');
 }
 
 @font-face {
@@ -42,8 +42,8 @@
   font-weight: 600;
   src: local('Open Sans Bold'),
        local('OpenSans-Bold'),
-       url(//remixed.kaos.io/fonts/osb.woff2) format('woff2'),
-       url(//remixed.kaos.io/fonts/osb.woff)  format('woff');
+       url(//remixed.kaos.st/fonts/osb.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/osb.woff)  format('woff');
 }
 
 @font-face {
@@ -52,8 +52,8 @@
   font-weight: 600;
   src: local('Open Sans Bold'),
        local('OpenSans-Bold'),
-       url(//remixed.kaos.io/fonts/osb.woff2) format('woff2'),
-       url(//remixed.kaos.io/fonts/osb.woff)  format('woff');
+       url(//remixed.kaos.st/fonts/osb.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/osb.woff)  format('woff');
 }
 
 /* ALL PAGES */
