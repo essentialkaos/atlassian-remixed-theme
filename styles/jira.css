@@ -599,3 +599,8 @@ table.aui img {
 .view-issue-field > .user-hover > .slack-status {
     margin-left: -4px;
 }
+
+/* Fixed Sonar icons position in Roles add-on */
+span.jprt_user-hover > img {
+  margin: 0 0 3px -10px;
+}
