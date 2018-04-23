@@ -304,3 +304,7 @@ ol.comment-threads.top-level {
 #mw-container .mw-drilldown-container {
   max-height: none !important;
 }
+
+#page-history-container .change-comment {
+  white-space: normal;
+}
