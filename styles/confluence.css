@@ -71,15 +71,15 @@
 }
 
 body {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 }
 
 i, cite, em, var, address, dfn {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 }
 
 strong, b {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
 
