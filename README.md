@@ -1,4 +1,4 @@
-## Remixed Theme for Atlassian products by EK
+<p align="center"><a href="#readme"><img src="https://gh.kaos.st/remixed-theme.svg"/></a></p>
 
 ### Usage
 
@@ -22,3 +22,9 @@
 ```css
 @import url("//remixed.kaos.st/confluence.css");
 ```
+
+### License
+
+[EKOL](https://essentialkaos.com/ekol)
+
+<p align="center"><a href="https://essentialkaos.com"><img src="https://gh.kaos.st/ekgh.svg"/></a></p>
