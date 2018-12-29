@@ -486,6 +486,14 @@ option.imagebacked {
   background-size: 16px;
 }
 
+/* ROLES PLUGIN */
+
+#projectroletabtable span.jprt_user-hover {
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  padding: 2px 2px 0px 4px;
+}
+
 /* THREADED COMMENTS PLUGIN */
 
 .upvote {
