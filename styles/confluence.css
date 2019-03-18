@@ -309,6 +309,11 @@ ol.comment-threads.top-level {
   white-space: normal;
 }
 
-body .ui-datepicker {
+#ui-datepicker-div {
   visibility: hidden;
+}
+
+.calendar-container {
+  display: table;
+  width: 100%;
 }
