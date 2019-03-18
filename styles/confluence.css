@@ -308,3 +308,7 @@ ol.comment-threads.top-level {
 #page-history-container .change-comment {
   white-space: normal;
 }
+
+body .ui-datepicker {
+  visibility: hidden;
+}
