@@ -1,6 +1,6 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*               ESSENTIAL KAOS CONFLUENCE 5.6.x REMIXED THEME                */
+/*                ESSENTIAL KAOS CONFLUENCE 6.x REMIXED THEME                 */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,18 +58,6 @@
 
 /* ALL PAGES */
 
-#main .clear {
-  display:none;
-}
-
-.panel, #content .panel {
-  background-color: #F9F9F9;
-}
-
-.wiki-content a, .wiki-content a:link, .wiki-content a:visited, .wiki-content a:focus, .wiki-content a:hover, .wiki-content a:active {
-  text-decoration: underline;
-}
-
 body {
   font-family: "Open Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 }
@@ -83,85 +71,6 @@ strong, b {
   font-weight: 600;
 }
 
-a {
-  text-decoration-skip: ink;
-}
-
-.wiki-content h1, .panel h1, .panelMacro h1 { font-weight: 300; font-size: 2.4em;  color: #999; margin-top: 1.2em; border-bottom: 1px solid #eee; }
-.wiki-content h2, .panel h2, .panelMacro h2 { font-weight: 300; border-bottom: none; color: #888; font-size: 2.0em; margin-top: 1.2em; border-bottom: 1px solid #eee; }
-.wiki-content h3, .panel h3, .panelMacro h3 { font-weight: 300; color: #888; font-size: 1.6em; margin-top: 1.2em; margin-bottom: 0.4em; }
-.wiki-content h4, .panel h4, .panelMacro h4 { font-weight: 300; color: #666; font-size: 1.4em; margin-top: 1.2em; margin-bottom: 0.4em; }
-.wiki-content h5, .panel h5, .panelMacro h5 { font-weight: 300; color: #666; font-size: 1.2em; margin-top: 1.2em; margin-bottom: 0.4em; }
-.wiki-content h6, .panel h6, .panelMacro h6 { font-weight: 300; color: #666; font-size: 1.2em; margin-top: 1.2em, margin-bottom: 0.4em; }
-
-#toolbar #format-dropdown .format-h1 a { font-family: "Open Sans"; font-weight: 300; font-size: 2.4em;  color: #999; margin: 10px 0 10px 0; }
-#toolbar #format-dropdown .format-h2 a { font-family: "Open Sans"; font-weight: 300; border-bottom: none; color: #888; font-size: 2.0em; margin: 8px 0 8px 0; }
-#toolbar #format-dropdown .format-h3 a { font-family: "Open Sans"; font-weight: 300; color: #888; font-size: 1.6em; margin: 6px 0 6px 0; }
-#toolbar #format-dropdown .format-h4 a { font-family: "Open Sans"; font-weight: 300; color: #666; font-size: 1.4em; margin: 4px 0 4px 0; }
-#toolbar #format-dropdown .format-h5 a { font-family: "Open Sans"; font-weight: 300; color: #666; font-size: 1.2em; margin: 4px 0 4px 0; }
-#toolbar #format-dropdown .format-h6 a { font-family: "Open Sans"; font-weight: 300; color: #666; font-size: 1.2em; margin: 4px 0 4px 0; }
-
-#title-text {
-  font-weight: 300;
-}
-
-.aui-message p.title {
-  font-weight: 600;
-}
-.aui-message.warning {
-  background: #FFF8E2; border-color: #F0D68B;
-}
-
-.aui-message.hint {
-  background: #F3F6FA; border-color: #93B4D9;
-}
-
-.recently-updated-social .update-item-details {
-  font-size: 12px;
-}
-.recently-updated-social .update-item {
-  margin-top: 5px;
-}
-
-.update-items .confluence-userlink {
-  font-weight: 600; font-size: 1.1em;
-}
-
-.wiki-content .confluence-content-image-border {
-  border: 1px solid #CCC;
-}
-
-.aui-header .aui-quicksearch input {
-  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.3);
-}
-
-#splitter-sidebar {
-  background-image: none;
-}
-
-hr {
-  border-bottom: none;
-}
-
-.page-metadata ul {
-  opacity: 0.25;
-  -moz-transition: opacity 0.35s ease-in-out 0s;
-  -webkit-transition: opacity 0.35s ease-in-out 0s;
-  -o-transition: opacity 0.35s ease-in-out 0s;
-  transition: opacity 0.35s ease-in-out 0s;
-}
-.page-metadata:hover ul {
-  opacity: 1;
-}
-
-div.panelHeader.pdl {
- border-bottom-style: dashed;
-}
-
-.wiki-content ol ol, .wiki-content ol ol ol ol ol, .wiki-content ol ol ol ol ol ol ol ol, .wiki-content ol ol ol ol ol ol ol ol ol ol ol {
-  list-style-type: decimal; padding-left: 20px;
-}
-
 .syntaxhighlighter a, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table tr, .syntaxhighlighter table tbody, .syntaxhighlighter table thead, .syntaxhighlighter table caption, .syntaxhighlighter textarea {
   font-family: "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace !important;
 }
@@ -170,79 +79,12 @@ code, kbd, pre, .panel .panelContent pre {
   font-family: "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
 }
 
-table.confluenceTable th.confluenceTh > .tablesorter-header-inner > p {
-  font-weight: 600;
+.panel, #content .panel {
+  background-color: #F9F9F9;
 }
 
-.plugin_pagetree_children_span.plugin_pagetree_current a {
-  font-weight: 600!important;
-}
-
-.wiki-content .confluence-content-image-border {
-  border: 1px solid #ddd;
-  padding: 4px;
-}
-
-.jira-issue, .unknown-jira-issue {
-  padding: 4px;
-}
-
-.aui-button.aui-button-primary.aui-style {
-  font-weight: 600;
-}
-
-.wiki-content table.tablesorter > thead > tr > th {
-  font-weight: 600;
-}
-
-/* FIXES FIXES FIXES **********************************************************/
-
-#wysiwyg iframe, #preview iframe {
-  min-height: 100%;
-}
-
-#footer .footer-body {
-  min-height: 0px;
-}
-
-.office-document a {
-  text-decoration: none;
-}
-
-.ia-fixed-sidebar div.plugin_pagetree ul.plugin_pagetree_children_list .plugin_pagetree_children_span a {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-.acs-tree-item, .acs-side-bar a, .acs-side-bar td a {
-  color: #333;
-}
-
-.aui-header .aui-quicksearch input[type='text'] {
-  -moz-transition: background-color 250ms ease-out;
-  -ms-transition: background-color 250ms ease-out;
-  -o-transition: background-color 250ms ease-out;
-  -webkit-transition: background-color 250ms ease-out;
-  background: #333;
-  color: #ccc;
-  transition: background-color 250ms ease-out;
-}
-
-.aui-header .aui-quicksearch input[type='text'][type='text']:focus {
-  background: #fff;
-  color: #333;
-}
-
-.attachments-table-drop-zone {
-  border: 1px dashed #bbb;
-}
-
-.attachments .attachment-row {
-  border-top: 1px solid #e5e5e5;
-}
-
-table.attachments .filename-column .filename {
-  padding-left: 4px;
+a {
+  text-decoration-skip: ink;
 }
 
 .wiki-content a, .wiki-content a:link {
@@ -253,43 +95,237 @@ table.attachments .filename-column .filename {
   text-decoration: underline;
 }
 
-ol.comment-threads.top-level {
-  border-bottom: 1px dashed #ddd;
+hr {
+  border-bottom: none;
 }
 
-#comments-section .comment {
-  border-top: 1px solid #ddd;
-  padding: 24px 0 24px 0;
+.wiki-content h1, .panel h1, .panelMacro h1 { font-weight: 300; font-size: 2.4em;  color: #999; margin-top: 1.2em; border-bottom: 1px solid #eee; }
+.wiki-content h2, .panel h2, .panelMacro h2 { font-weight: 300; border-bottom: none; color: #888; font-size: 2.0em; margin-top: 1.2em; border-bottom: 1px solid #eee; }
+.wiki-content h3, .panel h3, .panelMacro h3 { font-weight: 300; color: #888; font-size: 1.6em; margin-top: 1.2em; margin-bottom: 0.4em; }
+.wiki-content h4, .panel h4, .panelMacro h4 { font-weight: 300; color: #666; font-size: 1.4em; margin-top: 1.2em; margin-bottom: 0.4em; }
+.wiki-content h5, .panel h5, .panelMacro h5 { font-weight: 300; color: #666; font-size: 1.2em; margin-top: 1.2em; margin-bottom: 0.4em; }
+.wiki-content h6, .panel h6, .panelMacro h6 { font-weight: 300; color: #666; font-size: 1.2em; margin-top: 1.2em, margin-bottom: 0.4em; }
+
+#toolbar #format-dropdown .format-h1 a { font-weight: 300; font-size: 2.4em;  color: #999; margin: 10px 0 10px 0; }
+#toolbar #format-dropdown .format-h2 a { font-weight: 300; border-bottom: none; color: #888; font-size: 2.0em; margin: 8px 0 8px 0; }
+#toolbar #format-dropdown .format-h3 a { font-weight: 300; color: #888; font-size: 1.6em; margin: 6px 0 6px 0; }
+#toolbar #format-dropdown .format-h4 a { font-weight: 300; color: #666; font-size: 1.4em; margin: 4px 0 4px 0; }
+#toolbar #format-dropdown .format-h5 a { font-weight: 300; color: #666; font-size: 1.2em; margin: 4px 0 4px 0; }
+#toolbar #format-dropdown .format-h6 a { font-weight: 300; color: #666; font-size: 1.2em; margin: 4px 0 4px 0; }
+
+/* TOP MENU */
+
+.aui-header .aui-dropdown2-trigger:hover, 
+.aui-header .aui-dropdown2-trigger.active, 
+#header .aui-header .aui-nav-link.active, 
+#header .aui-header .aui-nav-imagelink.active, 
+#header .aui-header .aui-nav-imagelink:focus, 
+#header .aui-header .aui-nav-imagelink:hover, 
+#header .aui-header a:focus, 
+#header .aui-header a:hover, 
+#header .aui-header a:active {
+  color: #fff;
 }
+
+.aui-header .aui-dropdown2-trigger, 
+#header .aui-header .aui-nav-link, 
+#header .aui-header .aui-nav-imagelink, 
+#header .aui-header a {
+  color: #fff;
+}
+
+#header .aui-header .aui-dd-parent .aui-dropdown li.active a {
+  color: #fff;
+}
+
+.aui-header .aui-quicksearch input[type='text'], 
+.aui-header .aui-quicksearch input[type='text'][type='text']:focus {
+  background: #333;
+}
+
+.aui-header .aui-quicksearch:after, 
+.aui-header .aui-quicksearch input[type='text'], 
+.aui-header .aui-quicksearch input[type='text'][type='text']:focus {
+  color: #777;
+}
+
+.aui-dropdown2.aui-style-default:hover a:not(.aui-dropdown2-disabled):hover {
+  color: #fff;
+}
+
+/* DASHBOARD */
+
+.list-container a, .list-container a:visited {
+  color: #444;
+}
+
+.update-item-date-wrapper, .update-item-date-wrapper > a, .update-item-date-wrapper > a:visited {
+  color: #999;
+  font-size: 12px;
+}
+
+.list-container-all-updates .update-items .update-item-icons, .list-container-all-updates .update-items .update-item-content {
+  padding: 5px 0 5px 5px;
+}
+
+.list-container-all-updates .update-item:first-child .update-item-icons, .list-container-all-updates .update-item:first-child .update-item-content {
+  padding-top: 5px;
+}
+
+.aui-sidebar-body .all-spaces-link {
+  color: #aaa;
+}
+
+.content-header .list-title {
+  font-weight: 100;
+  color: #666;
+}
+
+/* DASHBOARD LEFT MENU */
+
+.aui-sidebar .aui-navgroup-vertical .aui-nav .aui-nav-selected>.aui-nav-item, 
+.aui-sidebar-submenu .aui-navgroup-vertical .aui-nav .aui-nav-selected>.aui-nav-item {
+  font-weight: 600;
+}
+
+.aui-nav-heading>strong {
+  font-weight: 600;
+  color: #666;
+}
+
+/* MACRO */
 
 .toc-macro {
   padding-bottom: 16px;
 }
 
-.list-container-all-updates .grouping {
-  border-bottom: 1px dashed #ddd;
-  padding: 8px 0 8px 0;
+/* PAGE TREE */
+
+table.confluenceTable th.confluenceTh > .tablesorter-header-inner > p {
+  font-weight: 600;
 }
 
-.ia-secondary-content {
-  margin-left: 4px;
-  margin-top: 4px;
+.plugin_pagetree_children_span.plugin_pagetree_current a {
+  font-weight: 600!important;
 }
 
-#content-title {
-  height: 38px;
+.acs-tree-item, .acs-side-bar a, .acs-side-bar td a,
+.ia-secondary-content .acs-tree-item .navigation-pseudo-link {
+  color: #333;
 }
 
-.confluence-information-macro>.title {
-  margin: 0px 0 8px 0;
+div.plugin_pagetree ul.plugin_pagetree_children_list>li>div.plugin_pagetree_childtoggle_container {
+  height: 27px;
+  opacity: 0.8;
 }
+
+.aui-iconfont-chevron-right::before {
+  margin-top: -6px;
+}
+
+.acs-side-bar-space-info .avatar-img-container .avatar-img-wrapper img.avatar-img {
+  background-color: transparent;
+}
+
+/* RECENTLY UPDATED LIST */
+
+.recently-updated-concise .update-item {
+  margin-top: 10px;
+}
+
+.more-link-container {
+  margin-top: 24px;
+  border-top: 1px solid #ddd;
+}
+
+h2#recently-updated-macro {
+  margin-bottom: 16px;
+  padding-bottom: 4px;
+}
+
+/* PAGE HEADER */
+
+#main #main-header {
+  margin-top: 0;
+}
+
+#title-text {
+  font-weight: 300;
+}
+
+/* PAGE METADATA */
+
+.page-metadata, .page-metadata ul li a:link, 
+.page-metadata ul li a:focus, .page-metadata ul li a:hover, 
+.page-metadata ul li a:active, .page-metadata ul li a:visited {
+  font-weight: 600;
+}
+
+.page-metadata ul {
+  opacity: 0.25;
+  -moz-transition: opacity 0.35s ease-in-out 0s;
+  -webkit-transition: opacity 0.35s ease-in-out 0s;
+  -o-transition: opacity 0.35s ease-in-out 0s;
+  transition: opacity 0.35s ease-in-out 0s;
+}
+
+.page-metadata:hover ul {
+  opacity: 1;
+}
+
+/* IMAGES */
+
+.wiki-content .confluence-content-image-border {
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+
+/* ATTACHMENTS PAGE */
+
+table.attachments .filename-column .filename {
+  padding-left: 4px;
+}
+
+/* COMMENT */
+
+.quick-comment-prompt span {
+  color: #999;
+}
+
+/* FOOTER */
+
+#likes-section {
+  font-weight: 400;
+}
+
+.labels-content {
+  font-weight: 400;
+}
+
+/* BLOGS */
+
+.blog-post-listing+.blog-post-listing {
+  border-top: 1px dashed #ddd;
+}
+
+/* JIRA WIDGET BUTTON */
+
+#content-metadata-jira .aui-icon {
+  margin-top: 2px;
+  margin-left: -2px;
+  padding-left: 2px;
+}
+
+/* USER MENTION */
+
+.wiki-content a.user-mention {
+  padding-top: 2px;
+}
+
+/* NOTIFICATIONS WIDGET */
 
 .mw-notification-verb-icon > div {
   background-size: 16px !important;
-}
-
-.aui-inline-dialog-contents.contents {
-  min-height: auto !important;
 }
 
 #notifications-miniview-iframe {
@@ -299,17 +335,4 @@ ol.comment-threads.top-level {
 #mw-container .mw-notifications-list {
   max-height: none !important;
   height: auto !important;
-}
-
-#mw-container .mw-drilldown-container {
-  max-height: none !important;
-}
-
-#page-history-container .change-comment {
-  white-space: normal;
-}
-
-.calendar-container {
-  display: table;
-  width: 100%;
 }
