@@ -10,9 +10,7 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Light'),
-       local('OpenSans-Light'),
-       url(//remixed.kaos.st/fonts/osl.woff2) format('woff2'),
+  src: url(//remixed.kaos.st/fonts/osl.woff2) format('woff2'),
        url(//remixed.kaos.st/fonts/osl.woff)  format('woff');
 }
 
@@ -20,9 +18,7 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'),
-       local('OpenSans'),
-       url(//remixed.kaos.st/fonts/osr.woff2) format('woff2'),
+  src: url(//remixed.kaos.st/fonts/osr.woff2) format('woff2'),
        url(//remixed.kaos.st/fonts/osr.woff)  format('woff');
 }
 
@@ -30,9 +26,7 @@
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
-  src: local('Open Sans Italic'),
-       local('OpenSans-Italic'),
-       url(//remixed.kaos.st/fonts/osi.woff2) format('woff2'),
+  src: url(//remixed.kaos.st/fonts/osi.woff2) format('woff2'),
        url(//remixed.kaos.st/fonts/osi.woff)  format('woff');
 }
 
@@ -40,9 +34,7 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Bold'),
-       local('OpenSans-Bold'),
-       url(//remixed.kaos.st/fonts/osb.woff2) format('woff2'),
+  src: url(//remixed.kaos.st/fonts/osb.woff2) format('woff2'),
        url(//remixed.kaos.st/fonts/osb.woff)  format('woff');
 }
 
@@ -50,9 +42,7 @@
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 600;
-  src: local('Open Sans Bold'),
-       local('OpenSans-Bold'),
-       url(//remixed.kaos.st/fonts/osb.woff2) format('woff2'),
+  src: url(//remixed.kaos.st/fonts/osb.woff2) format('woff2'),
        url(//remixed.kaos.st/fonts/osb.woff)  format('woff');
 }
 
@@ -201,10 +191,13 @@ hr {
   color: #333;
 }
 
-/* MACRO */
+/* TOC MACRO */
 
-.toc-macro {
-  padding-bottom: 16px;
+.wiki-content li>ul,
+.wiki-content li>ol,
+.wiki-content ul>ul,
+.wiki-content ol>ol {
+  padding-inline-start: 24px;
 }
 
 /* PAGE TREE */
@@ -214,12 +207,16 @@ table.confluenceTable th.confluenceTh > .tablesorter-header-inner > p {
 }
 
 .plugin_pagetree_children_span.plugin_pagetree_current a {
-  font-weight: 600!important;
+  font-weight: 600 !important;
 }
 
 .acs-tree-item, .acs-side-bar a, .acs-side-bar td a,
 .ia-secondary-content .acs-tree-item .navigation-pseudo-link {
   color: #333;
+}
+
+.ia-fixed-sidebar div.plugin_pagetree ul.plugin_pagetree_children_list .plugin_pagetree_children_span a {
+  white-space: normal;
 }
 
 div.plugin_pagetree ul.plugin_pagetree_children_list>li>div.plugin_pagetree_childtoggle_container {
@@ -261,6 +258,15 @@ h2#recently-updated-macro {
   font-weight: 300;
 }
 
+#main-header-placeholder {
+ opacity: 0;
+ height: 110px !important;
+}
+
+#title-text {
+ display: block !important;
+}
+
 /* PAGE METADATA */
 
 .page-metadata, .page-metadata ul li a:link,
@@ -298,10 +304,8 @@ h2#recently-updated-macro {
   color: #333;
 }
 
-.aui-button:focus, .aui-button:hover,
-.aui-button-subtle.aui-button:focus,
-.aui-button-subtle.aui-button:hover {
-  color: #000;
+.aui-button .aui-icon {
+  color: #333;
 }
 
 /* ATTACHMENTS PAGE */
@@ -369,6 +373,10 @@ table.attachments .filename-column .filename {
   color: #333;
 }
 
+#mw-container .mw-drilldown-top {
+  background: #fff;
+}
+
 /* COMMENT HIGHLIGHT */
 
 .inline-comment-marker.valid.active {
@@ -404,4 +412,39 @@ table.attachments .filename-column .filename {
 
 .contributors-list>li {
   color: #999;
+}
+
+/* EXPAND ICON */
+
+.expand-icon {
+  vertical-align: text-top;
+}
+
+/* COMMENTS */
+
+#comments-section .comment {
+  border-top: 1px solid #eee;
+  padding: 20px 0 20px 0;
+}
+
+#comments-section-title {
+  color: #888;
+}
+
+.ic-replies #ic-showmore-container .ic-collapse-decor-center span {
+  color: #888;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 10px !important;
+  top: -17px !important;
+}
+
+.ic-replies {
+  background-color: #fbfbfb !important;
+}
+
+/* SYNTAX HIGHLIGHTER */
+
+.syntaxhighlighter.sh-default .gutter {
+  background: #fff;
 }
