@@ -347,9 +347,19 @@ table.attachments .filename-column .filename {
 /* USER MENTION */
 
 .wiki-content a.user-mention {
-  color: #333;
+  color: #222;
+  background: rgba(0,0,0,0.08);
   padding-top: 2px;
   border-radius: 1em;
+}
+
+.wiki-content a.user-mention:hover,
+.wiki-content a.user-mention:active {
+  background: rgba(0,0,0,0.2);
+}
+
+.wiki-content a.user-mention:before {
+  background: none;
 }
 
 /* NOTIFICATIONS WIDGET */
