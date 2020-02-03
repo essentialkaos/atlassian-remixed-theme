@@ -1,6 +1,6 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                ESSENTIAL KAOS CONFLUENCE 6.x REMIXED THEME                 */
+/*                ESSENTIAL KAOS CONFLUENCE 7.x REMIXED THEME                 */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,38 @@
        url(//remixed.kaos.st/fonts/osb.woff)  format('woff');
 }
 
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//remixed.kaos.st/fonts/jbmr.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/jbmr.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//remixed.kaos.st/fonts/jbmi.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/jbmi.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  src: url(//remixed.kaos.st/fonts/jbmb.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/jbmb.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 600;
+  src: url(//remixed.kaos.st/fonts/jbmbi.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/jbmbi.woff)  format('woff');
+}
+
 /* ALL PAGES */
 
 body {
@@ -63,11 +95,11 @@ strong, b {
 }
 
 .syntaxhighlighter a, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table tr, .syntaxhighlighter table tbody, .syntaxhighlighter table thead, .syntaxhighlighter table caption, .syntaxhighlighter textarea {
-  font-family: "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace !important;
+  font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace !important;
 }
 
 code, kbd, pre, .panel .panelContent pre {
-  font-family: "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
+  font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
 }
 
 .panel, #content .panel {
@@ -84,10 +116,6 @@ a {
 
 .wiki-content a:focus, .wiki-content a:hover {
   text-decoration: underline;
-}
-
-hr {
-  border-bottom: none;
 }
 
 .wiki-content h1, .panel h1, .panelMacro h1 { font-weight: 300; font-size: 2.4em;  color: #999; margin-top: 1.2em; border-bottom: 1px solid #eee; }
