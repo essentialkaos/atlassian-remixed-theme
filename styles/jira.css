@@ -46,6 +46,38 @@
        url(//remixed.kaos.st/fonts/osb.woff)  format('woff');
 }
 
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//remixed.kaos.st/fonts/jbmr.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/jbmr.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//remixed.kaos.st/fonts/jbmi.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/jbmi.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  src: url(//remixed.kaos.st/fonts/jbmb.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/jbmb.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 600;
+  src: url(//remixed.kaos.st/fonts/jbmbi.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/jbmbi.woff)  format('woff');
+}
+
 /* ALL PAGES */
 
 body {
@@ -68,11 +100,11 @@ div.wiki-edit .preformatted,
 div.wiki-edit div.code,
 div.code,
 code, kbd, samp {
-  font-family: "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
+  font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
 }
 
 tt {
-  font-family: "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
+  font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
   background: #F5F5F5 none repeat scroll 0% 0%;
   border: 1px solid #CCC;
   border-radius: 2px;
@@ -510,6 +542,10 @@ option.imagebacked {
   color: #BBB;
   text-align: center;
   font-size: 12px;
+}
+
+.upload-progress-bar__thumbnail {
+  border: none;
 }
 
 /* STRUCTURE PLUGIN */
