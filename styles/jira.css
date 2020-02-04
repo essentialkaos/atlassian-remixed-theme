@@ -101,10 +101,12 @@ div.wiki-edit div.code,
 div.code,
 code, kbd, samp {
   font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
+  font-variant-ligatures: none;
 }
 
 tt {
   font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
+  font-variant-ligatures: none;
   background: #F5F5F5 none repeat scroll 0% 0%;
   border: 1px solid #CCC;
   border-radius: 2px;

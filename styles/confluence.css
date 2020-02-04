@@ -96,10 +96,12 @@ strong, b {
 
 .syntaxhighlighter a, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table tr, .syntaxhighlighter table tbody, .syntaxhighlighter table thead, .syntaxhighlighter table caption, .syntaxhighlighter textarea {
   font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace !important;
+  font-variant-ligatures: none;
 }
 
 code, kbd, pre, .panel .panelContent pre {
   font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
+  font-variant-ligatures: none;
 }
 
 .panel, #content .panel {
