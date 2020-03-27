@@ -273,21 +273,27 @@ div.codeContent pre {
 
 /* STATUSES */
 
-span[data-tooltip*="Closed"] {
+span.jira-issue-status-lozenge[data-tooltip*="Closed"] {
   background-color: #AAA !important;
   border-color: #AAA !important;
   color: #fff !important;
 }
 
-span[data-tooltip*="Ready For Test"] {
+span.jira-issue-status-lozenge[data-tooltip*="Ready For Test"] {
   background-color: #e56550 !important;
   border-color: #e56550 !important;
   color: #fff !important;
 }
 
-span[data-tooltip*="Delayed"] {
+span.jira-issue-status-lozenge[data-tooltip*="Delayed"] {
   background-color: #9672be !important;
   border-color: #9672be !important;
+  color: #fff !important;
+}
+
+span.jira-issue-status-lozenge[data-tooltip*="Incomplete"] {
+  background-color: #c74d95 !important;
+  border-color: #c74d95 !important;
   color: #fff !important;
 }
 
@@ -298,16 +304,25 @@ span.aui-lozenge-subtle {
 span.aui-lozenge-subtle[data-tooltip*="Closed"] {
   color: #777 !important;
   border-color: #d5d5d5 !important;
+  background-color: #fff !important;
 }
 
 span.aui-lozenge-subtle[data-tooltip*="Delayed"] {
   color: #815fbc !important;
   border-color: #e1d4fc !important;
+  background-color: #fff !important;
 }
 
 span.aui-lozenge-subtle[data-tooltip*="Ready For Test"] {
   color: #c83e2b !important;
   border-color: #deb3ad !important;
+  background-color: #fff !important;
+}
+
+span.aui-lozenge-subtle[data-tooltip*="Incomplete"] {
+  color: #ca5e9d !important;
+  border-color: #c74d95 !important;
+  background-color: #fff !important;
 }
 
 ul.labels li .lozenge {
