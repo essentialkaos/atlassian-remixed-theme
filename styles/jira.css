@@ -292,8 +292,8 @@ span.jira-issue-status-lozenge[data-tooltip*="Delayed"] {
 }
 
 span.jira-issue-status-lozenge[data-tooltip*="Incomplete"] {
-  background-color: #c74d95 !important;
-  border-color: #c74d95 !important;
+  background-color: #44acdb !important;
+  border-color: #44acdb !important;
   color: #fff !important;
 }
 
@@ -320,9 +320,9 @@ span.aui-lozenge-subtle[data-tooltip*="Ready For Test"] {
 }
 
 span.aui-lozenge-subtle[data-tooltip*="Incomplete"] {
-  color: #ca5e9d !important;
-  border-color: #c74d95 !important;
-  background-color: #fff !important;
+  color: #2592c3 !important;
+  border-color: #44acdb !important;
+  background-color: #44acdb04 !important;
 }
 
 ul.labels li .lozenge {
