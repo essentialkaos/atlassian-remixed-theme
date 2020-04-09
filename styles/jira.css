@@ -88,8 +88,9 @@ strong, b {
   font-weight: 600;
 }
 
-a {
-  text-decoration-skip: ink;
+.user-content-block a,
+.action-body.flooded a {
+  color: #196ea5;
 }
 
 pre, textarea, .wiki-textfield,
