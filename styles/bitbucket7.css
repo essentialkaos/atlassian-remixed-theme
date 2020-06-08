@@ -1,0 +1,206 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                     EK REMIXED THEME FOR BITBUCKET 7.x                     */
+/*                                                                            */
+/* ************************************************************************** */
+
+/* FONTS */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//remixed.kaos.st/fonts/osl.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/osl.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//remixed.kaos.st/fonts/osr.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/osr.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//remixed.kaos.st/fonts/osi.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/osi.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url(//remixed.kaos.st/fonts/osb.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/osb.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: url(//remixed.kaos.st/fonts/osb.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/osb.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//remixed.kaos.st/fonts/jbmr.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/jbmr.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: url(//remixed.kaos.st/fonts/jbmi.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/jbmi.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  src: url(//remixed.kaos.st/fonts/jbmb.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/jbmb.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 600;
+  src: url(//remixed.kaos.st/fonts/jbmbi.woff2) format('woff2'),
+       url(//remixed.kaos.st/fonts/jbmbi.woff)  format('woff');
+}
+
+/* ALL PAGES */
+
+body {
+  font-family: "Open Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+}
+
+pre, textarea, code, kbd, samp,
+.content-view .CodeMirror pre, table.diff-text,
+.branch-lozenge .branch-lozenge-content, td.project-key {
+  font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace !important;
+  font-variant-ligatures: none !important;
+}
+
+.branch-from-to {
+  font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
+  font-size: .9em;
+  padding: 0 8px;
+}
+
+.commitid, .ref-label, .monospace-lozenge {
+  font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
+  font-size: .9em;
+}
+
+.searchable-selector .results {
+  font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
+}
+
+.aui-header .aui-quicksearch input {
+  background: #000;
+}
+
+.aui-header .aui-quicksearch input:focus {
+  background: #000;
+  color: #fff;
+}
+
+.aui-tabs>.tabs-menu .menu-item a:focus, 
+.aui-tabs>.tabs-menu .menu-item a:hover {
+  color: #888;
+}
+
+#inbox-trigger aui-badge {
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px;
+}
+
+/* PROJECTS LIST */
+
+.bitbucket-theme #content table.aui > tbody > tr:hover,
+.bitbucket-theme .aui-dialog2 table.aui > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+
+th.project-key {
+  width: 10%;
+}
+
+th.project-name {
+  width: 25%;
+}
+
+/* FILE BROWSER */
+
+td.timestamp > time {
+  color: #999;
+  font-size: 12px;
+}
+
+.bitbucket-theme #browse-table tr.focused-file td:first-of-type {
+  border-left-color: #333;
+}
+
+/* PAGED TABLES */
+
+.paged-table tr.focused td:first-child {
+  border-left-color: #aaa;
+}
+
+.paged-table tr.focused td {
+  background-color: #f5f5f5;
+}
+
+.filebrowser-table tr.focused-file .directory-file-history.message::after, 
+.filebrowser-table tr:hover .directory-file-history.message::after {
+  background-image: none;
+}
+
+/* TIPSY */
+
+.tipsy .tipsy-inner {
+  background-color: #333;
+}
+
+.tipsy-s .tipsy-arrow, .tipsy-n .tipsy-arrow {
+    border-bottom-color: #333;
+    border-top-color: #333;
+}
+
+/* TOOLTIP */
+
+.Tooltip {
+  background-color: #333 !important;
+}
+
+/* SOURCE VIEWER */
+
+.source-view.text-view .line .line-number, .source-view.text-view .line .CodeMirror-linenumber {
+  color: #999;
+}
+
+.source-view.text-view .line .line-number:hover, .source-view.text-view .line .CodeMirror-linenumber:hover {
+  border-right-color: #999;
+}
+
+.pointer-events .content-view .CodeMirror.CodeMirror-focused:after {
+  box-shadow: none;
+  border: 2px solid #007dff36;
+}
+
+/* BUILDS PAGE */
+
+#jenkins-pipelines > div > code {
+  background-color: #222 !important;
+}
