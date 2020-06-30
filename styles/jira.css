@@ -1,6 +1,6 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                        EK REMIXED THEME FOR JIRA 6.x                       */
+/*                ESSENTIAL KAOS JIRA 8.x.x REMIXED THEME                     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,8 @@
 
 /* ALL PAGES */
 
-body {
+body, #tinymce {
+  color: #222;
   font-family: "Open Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 }
 
@@ -93,27 +94,6 @@ strong, b {
   color: #196ea5;
 }
 
-pre, textarea, .wiki-textfield,
-form.aui .wiki-textarea,
-form.aui .wiki-textfield,
-div.wiki-edit .preformatted,
-.preformatted,
-div.wiki-edit div.code,
-div.code,
-code, kbd, samp {
-  font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
-  font-variant-ligatures: none;
-}
-
-tt {
-  font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
-  font-variant-ligatures: none;
-  background: #F5F5F5 none repeat scroll 0% 0%;
-  border: 1px solid #CCC;
-  border-radius: 2px;
-  padding: 0 3px;
-}
-
 .aui-theme-default h1,
 .aui-theme-default h2,
 .aui-theme-default h3,
@@ -124,121 +104,104 @@ tt {
 
 .aui-theme-default h1 {
   font-weight: 100;
+  display: block;
 }
 
-.aui-header .aui-quicksearch input[type='text'] {
-  background: #333;
-  -webkit-transition: background-color 250ms ease-out;
-  -moz-transition: background-color 250ms ease-out;
-  -o-transition: background-color 250ms ease-out;
-  -ms-transition: background-color 250ms ease-out;
-  transition: background-color 250ms ease-out;
-}
-
-.aui-header .aui-quicksearch input[type='text'][type='text']:focus {
-  background:#fff;
-  color:#333;
-}
-
-.module>.mod-header+.mod-content {
-  margin-top: 10px !important;
-}
-
-.order-dropdown .aui-list-section-footer {
-  color: #999;
-}
-
-table.aui>thead>tr>th,
-table.aui>tbody>tr>th,
-table.aui>thead>tr>td,
-table.aui>tbody>tr>td,
-table.aui>tfoot>tr>td {
-  color: #555;
-}
-
-form.aui div.description {
-  color: #888;
-  font-size: 11px;
-  font-style: italic;
-  margin: 4px 0 0 0;
+.aui-header a, .aui-header .aui-dropdown2-trigger {
+  color: #fff;
 }
 
 ul {
   margin: 0;
 }
 
-/* GADGETS */
+pre, textarea, .wiki-textfield,
+form.aui .wiki-textarea,
+form.aui .wiki-textfield,
+div.wiki-edit .preformatted,
+.preformatted,
+div.wiki-edit div.code,
+div.code,
+code, kbd, samp,
+#structure textarea,
+.cell-type-key {
+  font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace !important;
+  font-variant-ligatures: none;
+}
 
-.search-results-dashboard-item-issue-table {
-  font-size: 13px;
+tt {
+  background: #F5F5F5 none repeat scroll 0% 0%;
+  border-radius: 2px;
+  border: 1px solid #CCC;
+  font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
+  font-variant-ligatures: none;
+  padding: 0 3px;
+}
+
+div.preformattedContent pre,
+div.codeContent pre {
+  max-height: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* ISSUE LIST */
+
+#issuetable>thead>tr>th, .issue-table>thead>tr>th,
+#issuetable>tbody>tr>th, .issue-table>tbody>tr>th,
+#issuetable>thead>tr>td, .issue-table>thead>tr>td,
+#issuetable>tbody>tr>td, .issue-table>tbody>tr>td,
+#issuetable>tfoot>tr>td, .issue-table>tfoot>tr>td {
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+  padding: 6px 10px;
+}
+
+/* PROJECT LIST */
+
+#browse-projects-page table.aui .project-list-type,
+#browse-projects-page table.aui .project-list-key {
+  width: 30px;
+}
+
+#browse-projects-page table.aui .project-list-category {
+  width: 100px;
 }
 
 /* ISSUE */
 
-.issue-header .issue-header-content>.aui-page-header {
-  padding: 12px 20px 0 20px;
+#viewissuesidebar {
+  width: 460px;
 }
 
-.ka .issue-header .issue-header-content>.aui-page-header {
-  padding-bottom: 8px;
+.item-details dl>dt {
+  width: 140px;
+  word-break: break-all;
 }
 
 .issue-header-content .aui-nav-breadcrumbs>li+li:before {
-  top: 6px;
   left: -2px;
+  top: 5px;
 }
 
-#viewissuesidebar {
-  width: 420px;
-}
-
-h2.toggle-title {
-  color: #888;
-}
-
-.issue-body-content .module>.mod-header>h1,
-.issue-body-content .module>.mod-header>h2,
-.issue-body-content .module>.mod-header>h3,
-.issue-body-content .module>.mod-header>h4,
-.issue-body-content .module>.mod-header>h5,
-.issue-body-content .module>.mod-header>h6
-{
-  font-weight: 100;
-}
-
-#summary-val .text {
-  font-weight: 100;
+aui-badge, .aui-badge {
+  background: #ddd;
+  padding: 3px 6px 3px 6px;
 }
 
 #watching-toggle,
 #watching-label,
 #vote-toggle,
-#vote-label {
+#vote-label,
+#assign-to-me {
+  color: #666;
   font-size: 12px;
   font-weight: 600;
-  color: #666;
-}
-
-.aui-badge {
-  background: #ddd;
-  padding: 2px 6px 3px 6px;
 }
 
 .aui-badge.vote-state-on,
 .aui-badge.watch-state-on {
   background-color: #999;
-}
-
-.icon {
-  vertical-align: middle;
-}
-
-.jira-icon-add {
-  margin-top: -13px;
-}
-
-.aui-icon-small, .aui-icon-large {
-  vertical-align: middle;
 }
 
 blockquote,
@@ -249,30 +212,101 @@ blockquote,
 }
 
 .status-view, .issueaction-viewworkflow {
-  font-size: 13px;
   color: #888;
+  font-size: 13px;
 }
 
-.links-list+.links-list {
-  border-top: 1px solid #eee;
+.property-list .item .name,
+.item-details dl>dt {
+  color: #777;
 }
 
-.links-list dd {
-  border-top: 1px solid #eee;
+/* SEARCH */
+
+.aui-header .aui-quicksearch input {
+  background: #111;
+  border: 2px solid #000;
 }
 
-div.preformattedContent pre,
-div.codeContent pre {
-  max-height: none;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+body:not(.aui-legacy-focus) .aui-header .aui-quicksearch input:focus {
+  background: #111;
+  color: #ffffff;
 }
 
-.subtask-table-container > #issuetable > tbody > .issuerow {
-  height: 52px;
+/* RELEASES */
+
+#release-report .status-category-blocks .yellow {
+  background-color: #f4d719;
+}
+
+.release-report-tab .yellow .tab-count {
+  color: #d1b60b;
+}
+
+.release-report-tab.active-tab .yellow,
+.release-report-tab:hover .yellow {
+  border-bottom-color: #f4d719;
+}
+
+#release-report .status-category-blocks .green {
+  background-color: #14892c;
+}
+
+.release-report-tab .green .tab-count {
+  color: #14892c;
+}
+
+.release-report-tab.active-tab .green,
+.release-report-tab:hover .green {
+  border-bottom-color: #14892c;
+}
+
+#release-report .status-category-blocks .blue-gray {
+  background-color: #c5c5c5;
+}
+
+#release-report .version-description {
+  margin-top: 16px;
 }
 
 /* STATUSES */
+
+.aui-lozenge {
+  padding: 3px 5px 3px;
+}
+
+.aui-lozenge.jira-issue-status-lozenge-medium-gray,
+.aui-lozenge.jira-issue-status-lozenge-blue-gray,
+.aui-lozenge.jira-issue-status-lozenge-default {
+  background-color: #496180;
+  border-color: #496180;
+}
+
+.aui-lozenge.jira-issue-status-lozenge-green,
+.aui-lozenge.jira-issue-status-lozenge-success {
+  background-color: #14892c;
+  border-color: #14892c;
+  color: #fff;
+}
+
+.aui-lozenge.jira-issue-status-lozenge-yellow,
+.aui-lozenge.jira-issue-status-lozenge-inprogress {
+  background-color: #ffd351;
+  border-color: #ffd351;
+  color: #3f3002;
+}
+
+.aui-lozenge.aui-lozenge-subtle.jira-issue-status-lozenge-yellow,
+.aui-lozenge.aui-lozenge-subtle.jira-issue-status-lozenge-inprogress {
+  border-color: #ffe28c;
+  color: #594300;
+}
+
+.aui-lozenge.aui-lozenge-subtle.jira-issue-status-lozenge-green,
+.aui-lozenge.aui-lozenge-subtle.jira-issue-status-lozenge-success {
+  border-color: #b2d8b9;
+  color: #14892c;
+}
 
 span.jira-issue-status-lozenge[data-tooltip*="Closed"] {
   background-color: #AAA !important;
@@ -300,6 +334,7 @@ span.jira-issue-status-lozenge[data-tooltip*="Incomplete"] {
 
 span.aui-lozenge-subtle {
   background-color: #fff !important;
+  border: 1px solid;
 }
 
 span.aui-lozenge-subtle[data-tooltip*="Closed"] {
@@ -320,6 +355,12 @@ span.aui-lozenge-subtle[data-tooltip*="Ready For Test"] {
   background-color: #fff !important;
 }
 
+span.aui-lozenge-subtle[data-tooltip*="In Review"] {
+  color: #594300 !important;
+  border-color: #ffe28c !important;
+  background-color: #fff !important;
+}
+
 span.aui-lozenge-subtle[data-tooltip*="Incomplete"] {
   color: #2592c3 !important;
   border-color: #44acdb !important;
@@ -334,29 +375,10 @@ ul.labels li .lozenge {
   padding: 3px 4px;
 }
 
-/* SUBTASKS */
-
-#issuetable>tbody>tr:first-child>td, .issue-table>tbody>tr:first-child>td,
-#issuetable>tbody>tr:first-child>th, .issue-table>tbody>tr:first-child>th,
-#issuetable>tfoot>tr:first-child>td, .issue-table>tfoot>tr:first-child>td {
-  border-top: 1px solid #eee;
-}
-
-#issuetable .stsequence, .issue-table .stsequence {
-  color: #888;
-}
-
 /* COMMENTS */
 
 .action-details {
   color: #999;
-}
-
-img.emoticon {
-  border: none;
-  padding: 0;
-  margin-top:0;
-  margin-bottom: 4px;
 }
 
 .issue-data-block:hover, .issue-data-block.focused {
@@ -373,286 +395,31 @@ img.emoticon {
   border-top: 1px solid #eee;
 }
 
-.commentreplyarea {
-  padding-top: 8px;
-}
-
 .textcommentreply {
   font-size: 14px;
 }
 
-.ops {
-  padding: 6px 0 0 0;
-}
-
-/* TABS */
-
-ul.tabs li strong,
-ul.tabs li.tab-title {
-  font-weight: normal;
-}
-
-.tabwrap>ul.tabs>li a,
-.tabwrap>ul.tabs>li a:link,
-.tabwrap>ul.tabs>li a:visited {
-  color: #888;
-}
-
-.tabwrap>.tabs.horizontal>li a:hover {
-  color: #333;
-}
-
-ul.labels li .lozenge {
-  overflow-x: visible;
-}
-
-ul.labels {
-  margin: 0;
-}
-
-/* ATTACHMENTS */
-
-#attachment_thumbnails .attachment-content {
-  border: 1px solid #ddd;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
-}
-
-.webkit .jira-multi-select>.representation .item-row .item-delete:after {
-  bottom: 0px;
-}
-
-/* DEVELOPMENT */
-
-.rolling-container {
-  font-size: 13px;
-  color: #AAA;
-}
-
-/* PROJECTS LIST */
-
-table.aui>tbody>tr,
-table.aui>tfoot>tr {
-  border-bottom: 1px solid #eee;
-}
-
-.colour-bar {
-  border-top: 10px solid #3c78b5;
-}
-
-/* ISSUE LIST */
-
-.issue-list>li {
-  border-bottom: 1px solid #eee;
-}
-
-#issuetable>thead>tr>th,
-.issue-table>thead>tr>th,
-#issuetable>tbody>tr>th,
-.issue-table>tbody>tr>th,
-#issuetable>thead>tr>td,
-.issue-table>thead>tr>td,
-#issuetable>tbody>tr>td,
-.issue-table>tbody>tr>td,
-#issuetable>tfoot>tr>td,
-.issue-table>tfoot>tr>td {
-  border-bottom: 1px solid #eee;
-}
-
-#search-header-view .header-section-primary h1 {
-  font-weight: 100;
-}
-
-.query-component .search-container[data-mode="advanced"] .atlassian-autocomplete label[for="advanced-search"] .icon {
-  top: 9px;
-  left: 7px;
-}
-
-.no-results-message h3 {
-  font-weight: 100;
-}
-
-.no-results-hint {
-  font-style: italic;
-}
-
-/* ADMINS PART */
-
-.aui-navgroup-horizontal .aui-nav>li a,
-.aui-navgroup-vertical .aui-nav>li>a,
-.aui-nav-vertical>li>a {
-  color: #666;
-}
-
-.aui-navgroup-horizontal
-.aui-nav>li a:focus,
-.aui-navgroup-vertical
-.aui-nav>li>a:focus,
-.aui-nav-vertical>li>a:focus,
-.aui-navgroup-horizontal
-.aui-nav>li a:hover,
-.aui-navgroup-vertical
-.aui-nav>li>a:hover,
-.aui-nav-vertical>li>a:hover {
-  color: #666;
-}
-
-#upm-container h4 {
-  font-weight: 400;
-}
-
-.pb_description {
-  font-weight: 100;
-  color: #666;
-}
-
-.pb_section {
-  margin: 8px 0 8px 0;
-}
-
-.pb_barborder {
-  border: none;
-  background-color: #EEE;
-}
-
-td.pb_barlefttd {
-  background-color: #4693E1;
-}
-
-div.pb_border {
-  border: 1px #CCC solid;
-}
-
-option.imagebacked {
-  background-size: 16px;
-}
-
-/* ROLES PLUGIN */
-
-#projectroletabtable span.jprt_user-hover {
-  background-color: #f7f7f7;
-  border-radius: 4px;
-  padding: 2px 2px 0px 4px;
-}
-
 /* THREADED COMMENTS PLUGIN */
 
-.upvote {
-  padding-right: 4px;
+.likes {
+  margin: 4px;
 }
 
 .commentreply {
-  line-height: 3;
   font-weight: 600;
+  line-height: 3;
 }
 
-/* DND PLUGIN */
+/* ADMIN PART */
 
-.issue-drop-zone {
-  border: 1px dashed #CCC;
+select.imagebacked option, 
+option.imagebacked, 
+option.selectall {
+  background-size: 16px;
 }
 
-.issue-drop-zone__text {
-  color: #888;
-  font-weight: 300;
-}
+/* SONAR */
 
-.issue-drop-zone__message {
-  color: #BBB;
-  text-align: center;
-  font-size: 12px;
-}
-
-.upload-progress-bar__thumbnail {
-  border: none;
-}
-
-/* STRUCTURE PLUGIN */
-
-.st-details-header {
-  background-color: #EEE;
-}
-
-.st-details-title-icon > img {
-  vertical-align: top;
-  width: 16px;
-  margin: 2px;
-}
-
-#structure .celldiv .value .s-icons > img {
-  margin-right: 2px;
-}
-
-/* FIXES FIXES FIXES */
-
-/* Fixed word break for text in tables */
-table.confluenceTable {
-  word-break: normal;
-}
-
-/* Fixed add subtask icon position */
-.issue-body-content .module>.mod-header .ops {
-  margin-top: -5px;
-  padding-left: 4px;
-}
-
-#view-subtasks_heading {
-  padding-bottom: 8px;
-}
-
-/* Fixed long names in attachments */
-#attachmentmodule,
-#descriptionmodule,
-#activitymodule {
-  word-break: break-word;
-}
-
-/* Fixed skinny buttons size */
-.skinny .split-view .issue-header .aui-toolbar .toolbar-group .toolbar-trigger,
-.skinny .split-view .issue-header .aui-toolbar .aui-dd-parent a.aui-dd-trigger {
-  height: auto;
-}
-
-/* Fixed link window height */
-#link-issue-dialog form {
-  height: 400px;
-}
-
-/* Fixed icon vertical align in prop lists */
-.property-list img {
-  vertical-align: sub;
-}
-
-/* Fixed icon vertical align in links lists */
-.links-list img {
-  vertical-align: sub;
-}
-
-/* Fixed icon vertical align in tables */
-table.aui img {
-  vertical-align: sub;
-}
-
-/* Fixed issue list items vertical align*/
-#issuetable>tbody>tr>td {
-  vertical-align: middle;
-}
-
-/* Fixed subtask separator vertical position in issue list */
-#issuetable .parentIssue, .issue-table .parentIssue {
-  background-position-y: 4px;
-}
-
-/* Fixed wrapping for status points from Sonar */
-.user-hover {
-  white-space: nowrap;
-}
-
-/* Fixed Sonar icons position */
 .view-issue-field > .user-hover > .slack-status {
-    margin-left: -4px;
-}
-
-/* Fixed Sonar icons position in Roles add-on */
-span.jprt_user-hover > img {
-  margin: 0 0 3px -10px;
+  margin-left: -4px;
 }
