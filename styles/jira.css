@@ -145,6 +145,14 @@ div.codeContent pre {
   word-wrap: break-word;
 }
 
+/* BANNER */
+
+@media(max-height: 680px) {
+  #announcement-banner {
+    display:none;
+  }
+}
+
 /* ISSUE LIST */
 
 #issuetable>thead>tr>th, .issue-table>thead>tr>th,
