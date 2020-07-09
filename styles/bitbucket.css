@@ -204,3 +204,10 @@ td.timestamp > time {
 #jenkins-pipelines > div > code {
   background-color: #222 !important;
 }
+
+/* FIXES */
+
+/* Fix diff viewer scroll on Safari */
+.diff-view {
+  display: block;
+}
