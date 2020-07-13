@@ -431,3 +431,59 @@ option.selectall {
 .view-issue-field > .user-hover > .slack-status {
   margin-left: -4px;
 }
+
+/* STRUCTURE */
+
+.s-summary-overflow-icon > img {
+  width: 16px;
+  height: 16px;
+}
+
+/* GROOVY FIELD ICONS */
+
+.sn-status-icon {
+  background-color: #eee;
+  border-radius: 4px;
+  color: #aaa;
+  font-size: 12px;
+  font-weight: bold;
+  height: 16px;
+  padding: 3px;
+  width: 16px;
+}
+
+.sn-status-hidden {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px;
+  vertical-align: text-top;
+}
+
+.sn-status-inprogress {
+  background-color: #f6d810bf;
+}
+
+.sn-status-resolved {
+  opacity: .4;
+  background-color: #fff;
+}
+
+.sn-status-incomplete {
+  background-color: #51c9ff91;
+}
+
+.sn-status-delayed {
+  background-color: #a87cd985;
+}
+
+.sn-status-ready-for-test {
+  background-color: #ff725b8f;
+}
+
+/* FIXES */
+
+/* Fix issue type icon size in issue browser */
+ul.aui-list-truncate > li > a.aui-icon-container {
+  background-size: 16px;
+}
