@@ -104,7 +104,6 @@ strong, b {
 
 .aui-theme-default h1 {
   font-weight: 100;
-  display: block;
 }
 
 .aui-header a, .aui-header .aui-dropdown2-trigger {
@@ -482,6 +481,11 @@ option.selectall {
 }
 
 /* FIXES */
+
+/* Fix bug with summary */
+#summary-val {
+  display: inline-block;
+}
 
 /* Fix issue type icon size in issue browser */
 ul.aui-list-truncate > li > a.aui-icon-container {
