@@ -1,6 +1,6 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                ESSENTIAL KAOS JIRA 8.x.x REMIXED THEME                     */
+/*                   ESSENTIAL KAOS JIRA 8.x REMIXED THEME                    */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,8 +106,12 @@ strong, b {
   font-weight: 100;
 }
 
-.aui-header a, .aui-header .aui-dropdown2-trigger {
-  color: #fff;
+.aui-header .aui-icon {
+  --aui-icon-size: 18px;
+}
+
+.aui-dropdown2.aui-style-default strong {
+  color: #555;
 }
 
 ul {

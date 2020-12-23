@@ -488,3 +488,42 @@ table.attachments .filename-column .filename {
 .syntaxhighlighter.sh-default .gutter {
   background: #fff;
 }
+
+/* TEAM CALENDARS PLUGIN / DASHBOARD */
+
+.dashboard-calendar .event-group .events .event-details {
+  padding: 2px 0 0 0px !important;
+}
+
+.dashboard-calendar .event-group .events .event-times-container {
+  width: 60px !important;
+}
+
+.dashboard-calendar .event-group .events .event-icon-container {
+  width: 30px !important;
+}
+
+.dashboard-calendar .event-group .events .event-details .event-subcalendar-name {
+  color: #aaa !important;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.dashboard-calendar .event-group .group-details {
+  margin-left: 32px !important;
+  margin-bottom: 16px;
+}
+
+.dashboard-calendar .calendar-heading {
+  border-bottom: none !important;
+}
+
+.aui-theme-default div.dashboard-upcoming-events div.dashboard-calendar {
+  overflow: auto !important;
+}
+
+/* LUCIDCHART PLUGIN */
+
+.lucidchart-viewer, .lucidchart-viewer.dragging {
+  cursor: move !important;
+}
