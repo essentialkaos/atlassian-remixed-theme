@@ -114,6 +114,15 @@ strong, b {
   color: #555;
 }
 
+.aui-header .aui-header-logo>a:focus,
+.aui-header .aui-header-logo>a:hover,
+.aui-header .aui-header-primary>.aui-nav>li>a:not(.aui-button):focus,
+.aui-header .aui-header-primary>.aui-nav>li>a:not(.aui-button):hover,
+.aui-header .aui-header-secondary>.aui-nav>li>a:not(.aui-button):focus,
+.aui-header .aui-header-secondary>.aui-nav>li>a:not(.aui-button):hover {
+  background-color: #ffffff1a !important;
+}
+
 ul {
   margin: 0;
 }
