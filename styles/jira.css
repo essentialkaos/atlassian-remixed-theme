@@ -543,3 +543,8 @@ td.pb_barlefttd {
 ul.aui-list-truncate > li > a.aui-icon-container {
   background-size: 16px;
 }
+
+/* Fix issue with editor style selector with threaded comments plugin is used */
+div[field-id="comment"] > div > div.aui-dropdown2.aui-dropdown2-in-buttons {
+  inset: 65px auto auto auto !important;
+}
