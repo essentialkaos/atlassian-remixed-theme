@@ -157,6 +157,10 @@ div.codeContent pre {
   word-wrap: break-word;
 }
 
+.aui-tooltip.tipsy .tipsy-inner {
+  background: rgb(0 0 0 / 0.8) !important;
+}
+
 /* BANNER */
 
 @media(max-height: 680px) {
