@@ -553,11 +553,6 @@ div[field-id="comment"] > div > div.aui-dropdown2.aui-dropdown2-in-buttons {
   inset: 65px auto auto auto !important;
 }
 
-/* Fix issue with focus on some elements */
-:focus {
-  outline-style: auto;
-}
-
 /* Fix search icon position */
 .query-component .search-container .search-button .aui-icon-small:before {
   margin-top: 0px !important;
