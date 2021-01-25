@@ -538,22 +538,27 @@ td.pb_barlefttd {
 
 /* FIXES */
 
-/* Fix bug with summary */
+/* All: Fix bug with summary */
 #summary-val {
   display: inline-block;
 }
 
-/* Fix issue type icon size in issue browser */
+/* All: Fix issue type icon size in issue browser */
 ul.aui-list-truncate > li > a.aui-icon-container {
   background-size: 16px;
 }
 
-/* Fix issue with editor style selector with threaded comments plugin is used */
+/* All: Fix issue with editor style selector with threaded comments plugin is used */
 div[field-id="comment"] > div > div.aui-dropdown2.aui-dropdown2-in-buttons {
   inset: 65px auto auto auto !important;
 }
 
-/* Fix search icon position */
+/* All: Fix search icon position */
 .query-component .search-container .search-button .aui-icon-small:before {
   margin-top: 0px !important;
+}
+
+/* Firefox: Fix issue with focus on some elements */
+a:focus {
+  outline-style: auto;
 }
