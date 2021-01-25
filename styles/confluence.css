@@ -527,3 +527,10 @@ table.attachments .filename-column .filename {
 .lucidchart-viewer, .lucidchart-viewer.dragging {
   cursor: move !important;
 }
+
+/* FIXES */
+
+/* Fix bug with change info on user profile page */
+.recently-updated-sidebar .update-item-meta {
+  overflow: visible;
+}
