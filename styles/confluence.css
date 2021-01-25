@@ -530,7 +530,7 @@ table.attachments .filename-column .filename {
 
 /* FIXES */
 
-/* Fix bug with change info on user profile page */
+/* Chrome: Fix bug with change info on user profile page */
 .recently-updated-sidebar .update-item-meta {
   overflow: visible;
 }
