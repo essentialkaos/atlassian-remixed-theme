@@ -448,6 +448,14 @@ table.attachments .filename-column .filename {
   border: none;
 }
 
+#com-atlassian-confluence .aui-dd-parent .aui-dropdown .dropdown-item.active a {
+  color: #fff;
+}
+
+.aui-dd-parent .aui-dropdown li.active > a > span.aui-icon-small {
+  color: #fff !important;
+}
+
 /* SPACE CONTRIBUTORS */
 
 .contributors-list>li {
