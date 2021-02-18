@@ -562,3 +562,8 @@ div[field-id="comment"] > div > div.aui-dropdown2.aui-dropdown2-in-buttons {
 a:focus {
   outline-style: auto;
 }
+
+/* Fix bug with arrow in select fields */
+select:not(.select) {
+  background-image: none !important;
+}
