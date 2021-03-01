@@ -430,6 +430,7 @@ ul.labels li .lozenge {
 }
 
 .commentreply {
+  color: #777 !important;
   font-weight: 600;
   line-height: 3;
 }
