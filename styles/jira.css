@@ -89,11 +89,6 @@ strong, b {
   font-weight: 600;
 }
 
-.user-content-block a,
-.action-body.flooded a {
-  color: #196ea5;
-}
-
 .aui-theme-default h1,
 .aui-theme-default h2,
 .aui-theme-default h3,
@@ -430,7 +425,6 @@ ul.labels li .lozenge {
 }
 
 .commentreply {
-  color: #777 !important;
   font-weight: 600;
   line-height: 3;
 }
