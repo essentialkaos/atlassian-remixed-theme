@@ -156,6 +156,11 @@ div.codeContent pre {
   background: rgb(0 0 0 / 0.8) !important;
 }
 
+.issue-data-block .actionContainer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 /* BANNER */
 
 @media(max-height: 680px) {
@@ -420,13 +425,47 @@ ul.labels li .lozenge {
 
 /* THREADED COMMENTS PLUGIN */
 
-.likes {
-  margin: 4px;
-}
-
 .commentreply {
   font-weight: 600;
-  line-height: 3;
+}
+
+a.user-hover.user-avatar {
+  margin-right: 2px !important;
+}
+
+div.action-details > img.slack-status {
+  margin-top: -4px;
+}
+
+.currentvotes {
+  margin-top: 4px;
+}
+
+.line-comment {
+  border-top: 0 !important;
+  border-right: 0 !important;
+}
+
+#modal-comment-vote-detail .content-body .user-name {
+  color: #222 !important;
+  font-weight: normal;
+}
+
+#modal-comment-vote-detail .aui-dialog2-header {
+  padding: 10px 0 0 10px !important;
+}
+
+.comment-reply-btn-action-container {
+  opacity: 0.4;
+  transition: opacity 0.25s ease-in-out 0s;
+}
+
+.comment-reply-btn-action-container:hover {
+  opacity: 1;
+}
+
+.twixi-block .verbose .flooded, .toggle-wrap .verbose .flooded {
+  overflow: hidden;
 }
 
 /* ADMIN PART */
