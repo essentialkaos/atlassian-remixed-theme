@@ -156,11 +156,6 @@ div.codeContent pre {
   background: rgb(0 0 0 / 0.8) !important;
 }
 
-.issue-data-block .actionContainer {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
 /* BANNER */
 
 @media(max-height: 680px) {
@@ -243,6 +238,14 @@ blockquote,
 .property-list .item .name,
 .item-details dl>dt {
   color: #777;
+}
+
+.image-wrap > a > img {
+  background-color: #fdfdfd;
+  border-radius: 2px;
+  border: 1px solid #ddd !important;
+  margin: 6px 0 6px 0;
+  padding: 4px;
 }
 
 /* SEARCH */
@@ -421,6 +424,11 @@ ul.labels li .lozenge {
 
 .textcommentreply {
   font-size: 14px;
+}
+
+.issue-data-block .actionContainer {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /* THREADED COMMENTS PLUGIN */
