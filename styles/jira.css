@@ -431,10 +431,16 @@ ul.labels li .lozenge {
   padding-bottom: 15px;
 }
 
+.twixi-block .verbose .flooded, .toggle-wrap .verbose .flooded {
+  overflow: hidden;
+}
+
 /* THREADED COMMENTS PLUGIN */
 
 .commentreply {
   font-weight: 600;
+  margin-left: 0;
+  margin-right: 30px;
 }
 
 a.user-hover.user-avatar {
@@ -472,8 +478,16 @@ div.action-details > img.slack-status {
   opacity: 1;
 }
 
-.twixi-block .verbose .flooded, .toggle-wrap .verbose .flooded {
-  overflow: hidden;
+.comment-vote-action-container {
+  order: 2;
+}
+
+.btn-vote-action.upvote {
+  width: 68px;
+}
+
+.btn-vote-action.downvote {
+  width: 90px;
 }
 
 /* ADMIN PART */
