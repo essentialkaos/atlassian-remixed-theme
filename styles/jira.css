@@ -89,6 +89,11 @@ strong, b {
   font-weight: 600;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
 .aui-theme-default h1,
 .aui-theme-default h2,
 .aui-theme-default h3,
@@ -246,6 +251,13 @@ blockquote,
   border: 1px solid #ddd !important;
   margin: 6px 0 6px 0;
   padding: 4px;
+}
+
+/* EDITOR */
+
+a.wiki-edit-operation > img {
+  height: 16px;
+  width: 16px;
 }
 
 /* SEARCH */
@@ -602,11 +614,6 @@ td.pb_barlefttd {
 /* All: Fix issue type icon size in issue browser */
 ul.aui-list-truncate > li > a.aui-icon-container {
   background-size: 16px;
-}
-
-/* All: Fix issue with editor style selector with threaded comments plugin is used */
-div[field-id="comment"] > div > div.aui-dropdown2.aui-dropdown2-in-buttons {
-  inset: 65px auto auto auto !important;
 }
 
 /* All: Fix search icon position */
