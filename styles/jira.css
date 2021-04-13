@@ -549,6 +549,12 @@ td.pb_barlefttd {
   border: none;
 }
 
+.adminhelper-icon-tick,
+.adminhelper-icon-cross,
+.adminhelper-icon-warning {
+  background-size: 16px;
+}
+
 /* SONAR */
 
 .view-issue-field > .user-hover > .slack-status {
