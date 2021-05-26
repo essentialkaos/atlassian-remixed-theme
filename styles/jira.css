@@ -443,10 +443,6 @@ ul.labels li .lozenge {
   padding-bottom: 15px;
 }
 
-.twixi-block .verbose .flooded, .toggle-wrap .verbose .flooded {
-  overflow: hidden;
-}
-
 /* THREADED COMMENTS PLUGIN */
 
 .commentreply {

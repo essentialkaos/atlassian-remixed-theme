@@ -491,6 +491,13 @@ table.attachments .filename-column .filename {
   background-color: #fbfbfb !important;
 }
 
+/* STATUS MACRO */
+
+.status-macro {
+  min-width: 28px;
+  padding: 3px 5px 3px;
+}
+
 /* SYNTAX HIGHLIGHTER */
 
 .syntaxhighlighter.sh-default .gutter {
