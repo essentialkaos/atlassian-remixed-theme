@@ -169,6 +169,17 @@ div.codeContent pre {
   }
 }
 
+/* FOOTER */
+
+#footer-logo, p.atlassian-footer {
+  display: none;
+}
+
+#footer .footer-body {
+  margin: 28px 0 0 0;
+  padding: 0;
+}
+
 /* ISSUE LIST */
 
 #issuetable>thead>tr>th, .issue-table>thead>tr>th,
@@ -616,6 +627,11 @@ td.pb_barlefttd {
 /* All: Fix issue type icon size in issue browser */
 ul.aui-list-truncate > li > a.aui-icon-container {
   background-size: 16px;
+}
+
+/* All: Fix issue with editor style selector with threaded comments plugin is used */
+div[field-id="comment"] > div > div.aui-dropdown2.aui-dropdown2-in-buttons {
+ inset: 65px auto auto auto !important;
 }
 
 /* All: Fix search icon position */
