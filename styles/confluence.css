@@ -221,6 +221,10 @@ a {
   color: #333;
 }
 
+.expand-collapse-trigger, .space-favourite {
+  color: #666 !important;
+}
+
 /* TOC MACRO */
 
 .wiki-content li>ul,
@@ -254,8 +258,8 @@ div.plugin_pagetree ul.plugin_pagetree_children_list>li>div.plugin_pagetree_chil
   opacity: 0.8;
 }
 
-.aui-iconfont-chevron-right::before {
-  margin-top: -6px;
+.aui-iconfont-chevron-left::before, .aui-iconfont-chevron-right::before {
+  margin-top: -1px;
 }
 
 .acs-side-bar-space-info .avatar-img-container .avatar-img-wrapper img.avatar-img {
@@ -324,10 +328,18 @@ h2#recently-updated-macro {
   padding: 4px;
 }
 
-/* TOP BUTTONS */
+/* TOP MENU BUTTONS */
 
-.aui-icon-small:before {
-  margin-top: -7px;
+.app-switcher-trigger>.aui-icon {
+  opacity: .7;
+}
+
+.aui-header .aui-icon {
+  --aui-icon-size: 18px;
+}
+
+body:not([data-aui-version^="8"]) #create-page-button.clc-create-dialog-btn .aui-icon.aui-iconfont-more {
+  color: #fff;
 }
 
 .aui-button.aui-button-subtle {
@@ -336,6 +348,14 @@ h2#recently-updated-macro {
 
 .aui-button .aui-icon {
   color: #333;
+}
+
+.aui-dropdown2-trigger:not(.aui-dropdown2-trigger-arrowless):before {
+  margin-top: -7px;
+}
+
+.mw-anchor.unread .badge {
+  background: var(--aui-badge-primary-bg-color);
 }
 
 /* ATTACHMENTS PAGE */
