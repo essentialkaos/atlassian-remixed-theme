@@ -114,15 +114,6 @@ hr {
   color: #555;
 }
 
-.aui-header .aui-header-logo>a:focus,
-.aui-header .aui-header-logo>a:hover,
-.aui-header .aui-header-primary>.aui-nav>li>a:not(.aui-button):focus,
-.aui-header .aui-header-primary>.aui-nav>li>a:not(.aui-button):hover,
-.aui-header .aui-header-secondary>.aui-nav>li>a:not(.aui-button):focus,
-.aui-header .aui-header-secondary>.aui-nav>li>a:not(.aui-button):hover {
-  background-color: #ffffff1a !important;
-}
-
 ul {
   margin: 0;
 }
@@ -427,8 +418,8 @@ ul.labels li .lozenge {
 
 /* COMMENTS */
 
-.action-details {
-  color: #999;
+.action-details .update-info {
+  color: #999 !important;
 }
 
 .issue-data-block:hover, .issue-data-block.focused {
@@ -452,6 +443,10 @@ ul.labels li .lozenge {
 .issue-data-block .actionContainer {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.action-links.action-comment-actions {
+  padding-left: 28px;
 }
 
 /* THREADED COMMENTS PLUGIN */
@@ -507,6 +502,21 @@ div.action-details > img.slack-status {
 
 .btn-vote-action.downvote {
   width: 90px;
+}
+
+#btnFilterOnlyMyComment, #btnFilterOnlyMyMentions {
+  display: none;
+}
+
+.save-options.wiki-button-bar {
+  border: 1px solid #dfe1e5;
+  border-top: none;
+  border-radius: 0 0 3px 3px;
+  min-height: 38px;
+}
+
+.comment-vote-action-container {
+  margin-left: -10px !important;
 }
 
 /* ADMIN PART */
@@ -631,7 +641,7 @@ ul.aui-list-truncate > li > a.aui-icon-container {
 
 /* All: Fix issue with editor style selector with threaded comments plugin is used */
 div[field-id="comment"] > div > div.aui-dropdown2.aui-dropdown2-in-buttons {
- inset: 65px auto auto auto !important;
+  inset: 65px auto auto auto !important;
 }
 
 /* All: Fix search icon position */
@@ -654,4 +664,33 @@ select:not(.select) {
   background-color: #fff !important;
   border: 1px solid #f0f0f0 !important;
   border-radius: 3px;
+}
+
+/* Comments: Fix comment collapse button position */
+.issue-data-block .aui-iconfont-collapsed,
+.issue-data-block .aui-iconfont-expanded {
+  top: 18px;
+}
+
+/* Comments: Fix bug with showing comment actions */
+.issue-data-block:hover .action-links a, .issue-data-block.focused .action-links a {
+    opacity: 1 !important;
+}
+
+.issue-data-block .actionContainer:hover .action-links a {
+    opacity: 1 !important;
+}
+
+.issue-data-block .action-links {
+    opacity: 0 !important;
+}
+
+.issue-data-block .actionContainer:hover .action-links {
+    opacity: 1 !important;
+}
+
+/* Threaded comments: Fix bug with comment textarea in wiki format */
+.commentreplyarea .wiki-edit-content .wiki-textfield {
+  max-width: 97.9% !important;
+  width: 97.9% !important;
 }
