@@ -712,3 +712,10 @@ select:not(.select) {
   max-width: 97.9% !important;
   width: 97.9% !important;
 }
+
+/* Fix bug with message spinner */
+
+.jira-qr-notice .jira-qr-extra-info .jira-qr-reload-container .jira-qr-spinner {
+  margin-right: 6px;
+  overflow: visible;
+}
