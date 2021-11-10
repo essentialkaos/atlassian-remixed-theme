@@ -714,8 +714,13 @@ select:not(.select) {
 }
 
 /* Fix bug with message spinner */
-
 .jira-qr-notice .jira-qr-extra-info .jira-qr-reload-container .jira-qr-spinner {
   margin-right: 6px;
   overflow: visible;
+}
+
+/* Fix attachment background  */
+#attachment_thumbnails .attachment-thumb,
+#attachment_thumbnails .attachment-thumb .gallery {
+  width: 198px;
 }
