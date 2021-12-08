@@ -692,19 +692,19 @@ select:not(.select) {
 
 /* Comments: Fix bug with showing comment actions */
 .issue-data-block:hover .action-links a, .issue-data-block.focused .action-links a {
-    opacity: 1 !important;
+  opacity: 1 !important;
 }
 
 .issue-data-block .actionContainer:hover .action-links a {
-    opacity: 1 !important;
+  opacity: 1 !important;
 }
 
 .issue-data-block .action-links {
-    opacity: 0 !important;
+  opacity: 0 !important;
 }
 
 .issue-data-block .actionContainer:hover .action-links {
-    opacity: 1 !important;
+  opacity: 1 !important;
 }
 
 /* Threaded comments: Fix bug with comment textarea in wiki format */
@@ -723,4 +723,10 @@ select:not(.select) {
 #attachment_thumbnails .attachment-thumb,
 #attachment_thumbnails .attachment-thumb .gallery {
   width: 198px;
+}
+
+/* Fix color and position of quick search dropdown */
+.quick-search-section-heading {
+  padding: 8px;
+  color: #999;
 }
