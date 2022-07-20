@@ -735,3 +735,8 @@ select:not(.select) {
   padding: 8px;
   color: #999;
 }
+
+/* Fix double scrolls */
+.page-type-navigator {
+  overflow: hidden;
+}
