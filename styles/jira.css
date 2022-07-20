@@ -152,6 +152,11 @@ div.codeContent pre {
   background: rgb(0 0 0 / 0.8) !important;
 }
 
+#log-work > div.form-body > a,
+#log-work > div.form-body > img {
+  display: none;
+}
+
 /* EDIT DIALOG */
 
 @media (max-height: 700px) {
