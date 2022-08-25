@@ -13,7 +13,15 @@
 ```html
 <link href="//remixed.kaos.st/jira-hide.css" rel="stylesheet" type="text/css" />
 ```
-4. Save announcement;
+4. Add this lines to Jira Editor plugin styles:
+- `jira-editor-plugin-*.jar:/vendor/tinymce/skins/content/dark/content.min.css`
+- `jira-editor-plugin-*.jar:/vendor/tinymce/skins/content/default/content.min.css`
+- `jira-editor-plugin-*.jar:/vendor/tinymce/skins/content/document/content.min.css`
+- `jira-editor-plugin-*.jar:/vendor/tinymce/skins/content/writer/content.min.css`
+```css
+@import url("//remixed.kaos.st/jira.css");
+```
+5. Save announcement;
 
 #### Confluence
 
