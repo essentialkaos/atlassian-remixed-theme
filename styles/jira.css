@@ -608,6 +608,12 @@ td.pb_barlefttd {
   height: 16px;
 }
 
+/* PORTFOLIO/PLANS */
+
+div[data-name^="scope-issue"] > div[style*="/viewavatar"] {
+  background-size: 16px;
+}
+
 /* GROOVY FIELD ICONS */
 
 .sn-status-icon {
@@ -734,9 +740,4 @@ select:not(.select) {
 .quick-search-section-heading {
   padding: 8px;
   color: #999;
-}
-
-/* Fix double scrolls */
-.page-type-navigator {
-  overflow: hidden;
 }
