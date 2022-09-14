@@ -610,7 +610,7 @@ td.pb_barlefttd {
 
 /* PORTFOLIO/PLANS */
 
-div[data-name^="scope-issue"] > div[style*="/viewavatar"] {
+div[style*="background-image: url(\"/secure/viewavatar?size=xsmall"] {
   background-size: 16px;
 }
 
