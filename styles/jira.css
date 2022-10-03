@@ -473,73 +473,53 @@ ul.labels li .lozenge {
 
 /* THREADED COMMENTS PLUGIN */
 
-.commentreply {
-  font-weight: 600;
-  margin-left: 0;
-  margin-right: 30px;
-}
-
-a.user-hover.user-avatar {
-  margin-right: 2px !important;
-}
-
-div.action-details > img.slack-status {
-  margin-top: -4px;
-}
-
-.currentvotes {
-  margin-top: 4px;
-  cursor: pointer;
-}
-
-.line-comment {
+.comment-line {
   border-top: 0 !important;
   border-right: 0 !important;
 }
 
-#modal-comment-vote-detail .content-body .user-name {
-  color: #222 !important;
-  font-weight: normal;
+.comment-item {
+  padding-bottom: 15px;
+  padding-right: 10px;
 }
 
-#modal-comment-vote-detail .aui-dialog2-header {
-  padding: 10px 0 0 10px !important;
+.comment-item-focused {
+  border-radius: 4px;
 }
 
-.comment-reply-btn-action-container {
-  opacity: 0.4;
-  transition: opacity 0.25s ease-in-out 0s;
+.btn-expand {
+  background: #ecedf0;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  height: 18px !important;
+  margin-left: -8px;
+  width: 18px !important;
 }
 
-.comment-reply-btn-action-container:hover {
-  opacity: 1;
+.btn-expand:hover {
+  background: #dfe2e7;
 }
 
-.comment-vote-action-container {
-  order: 2;
+.comment-item__action-details--avatar > .user-avatar {
+  color: #555;
+  font-size: 14px !important;
+  font-weight: 600;
 }
 
-.btn-vote-action.upvote {
-  width: 68px;
+.comment-item-focused {
+  background: #f8f8f8;
 }
 
-.btn-vote-action.downvote {
-  width: 90px;
+.vote-num {
+  color: unset;
 }
 
-#btnFilterOnlyMyComment, #btnFilterOnlyMyMentions {
-  display: none;
+.comment-item__action-body--container {
+  max-height: unset;
 }
 
-.save-options.wiki-button-bar {
-  border: 1px solid #dfe1e5;
-  border-top: none;
-  border-radius: 0 0 3px 3px;
-  min-height: 38px;
-}
-
-.comment-vote-action-container {
-  margin-left: -10px !important;
+.block-add-root-comment__sticky {
+  box-shadow: 0 -1px 15px 1px #00000024 !important;
 }
 
 /* ADMIN PART */
@@ -716,12 +696,6 @@ select:not(.select) {
 
 .issue-data-block .actionContainer:hover .action-links {
   opacity: 1 !important;
-}
-
-/* Threaded comments: Fix bug with comment textarea in wiki format */
-.commentreplyarea .wiki-edit-content .wiki-textfield {
-  max-width: 97.9% !important;
-  width: 97.9% !important;
 }
 
 /* Fix bug with message spinner */
