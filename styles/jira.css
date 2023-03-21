@@ -715,3 +715,8 @@ select:not(.select) {
   padding: 8px;
   color: #999;
 }
+
+/* Threaded Comments Plugin sticky panel fix */
+.block-add-root-comment__sticky {
+  width: calc(100% - var(--aui-sidebar-width, 0px) - 20px) !important;
+}
