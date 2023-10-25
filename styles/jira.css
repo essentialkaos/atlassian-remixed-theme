@@ -1,6 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                   ESSENTIAL KAOS JIRA 8.x REMIXED THEME                    */
+/*                   ESSENTIAL KAOS JIRA 9.x REMIXED THEME                    */
+/*                  https://kaos.sh/atlassian-remixed-theme                   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +83,7 @@
 
 body, #tinymce {
   color: #222;
-  font-family: "Open Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif !important;
 }
 
 strong, b {
@@ -107,7 +108,7 @@ hr {
 }
 
 .aui-header .aui-icon {
-  --aui-icon-size: 18px;
+  --aui-icon-size: 18px !important;
 }
 
 .aui-dropdown2.aui-style-default strong {
@@ -148,13 +149,42 @@ div.codeContent pre {
   word-wrap: break-word;
 }
 
-.aui-tooltip.tipsy .tipsy-inner {
-  background: rgb(0 0 0 / 0.8) !important;
+.aui-tooltip {
+  background-color: #222222d1;
 }
 
 #log-work > div.form-body > a,
 #log-work > div.form-body > img {
   display: none;
+}
+
+.aui-iconfont-info-filled {
+  --aui-icon-size: 12px;
+  filter: grayscale(1) opacity(0.35);
+  padding-bottom: 3px;
+}
+
+/* ACTIVITY STREAM */
+
+.activity-item-description blockquote {
+  background: #f6faff !important;
+  border-left: 2px solid #a6cff6 !important;
+  margin: 1em 0 1em 0 !important;
+}
+
+.activity-stream-container .thumbnails img {
+  width: calc(100% - 8px);
+}
+
+.activity-item-description .user-content .confluence-embedded-image {
+  border: 1px #ddd solid;
+  height: auto;
+  max-width: calc(100% - 8px) !important;
+  padding: 2px;
+}
+
+.codeContent  > pre, .preformattedContent > pre {
+  font-size: 12px;
 }
 
 /* EDIT DIALOG */
@@ -205,13 +235,28 @@ div.codeContent pre {
 
 /* PROJECT LIST */
 
-#browse-projects-page table.aui .project-list-type,
+#browse-projects-page table.aui .project-list-name {
+  width: 25%;
+}
+
 #browse-projects-page table.aui .project-list-key {
-  width: 30px;
+  width: 16px;
+}
+
+#browse-projects-page table.aui .project-list-type {
+  width: 12px;
+}
+
+#browse-projects-page table.aui .project-list-lead {
+  width: 20px;
 }
 
 #browse-projects-page table.aui .project-list-category {
-  width: 100px;
+  width: 30px;
+}
+
+#browse-projects-page table.aui .project-list-url {
+  width: 25%;
 }
 
 /* ISSUE */
@@ -273,6 +318,10 @@ blockquote,
   border: 1px solid #ddd !important;
   margin: 6px 0 6px 0;
   padding: 4px;
+}
+
+.js-find-on-board-issue {
+  color: #999 !important;
 }
 
 /* EDITOR */
@@ -425,7 +474,41 @@ span.aui-lozenge-subtle[data-tooltip*="In Review"] {
 span.aui-lozenge-subtle[data-tooltip*="Incomplete"] {
   color: #2592c3 !important;
   border-color: #44acdb !important;
-  background-color: #44acdb04 !important;
+  background-color: #fff !important;
+}
+
+.transition-button-incomplete {
+  transition: background-color 0.5s, color 0.5s;
+  --aui-btn-bg: #2592c3 !important;
+  --aui-btn-border: #44acdb !important;
+}
+
+.transition-button-inprogress {
+  transition: background-color 0.5s, color 0.5s;
+  --aui-btn-bg: #ffd351 !important;
+  --aui-btn-border: #ffd351 !important;
+  --aui-btn-text: #3f3002 !important;
+}
+
+.transition-button-delayed {
+  transition: background-color 0.5s, color 0.5s;
+  --aui-btn-bg: #9672be !important;
+  --aui-btn-border: #9672be !important;
+  --aui-btn-text: #fff !important;
+}
+
+.transition-button-ready-for-test {
+  transition: background-color 0.5s, color 0.5s;
+  --aui-btn-bg: #e56550 !important;
+  --aui-btn-border: #e56550 !important;
+  --aui-btn-text: #fff !important;
+}
+
+.transition-button-closed {
+  transition: background-color 0.5s, color 0.5s;
+  --aui-btn-bg: #aaa !important;
+  --aui-btn-border: #aaa !important;
+  --aui-btn-text: #fff !important;
 }
 
 ul.labels li .lozenge {
@@ -436,10 +519,19 @@ ul.labels li .lozenge {
   padding: 3px 4px;
 }
 
+#opsbar-transitions_more_drop {
+  width: 330px;
+}
+
+#opsbar-transitions_more_drop .core-transition-list .transition-label {
+  display: grid;
+  grid-template-columns: calc(50%) 25px auto;
+}
+
 /* COMMENTS */
 
-.action-details .update-info {
-  color: #999 !important;
+.action-details {
+  color: #999;
 }
 
 .issue-data-block {
@@ -456,10 +548,6 @@ ul.labels li .lozenge {
 
 .issue-data-block .actionContainer {
   padding: 15px 10px 15px 20px;
-}
-
-.action-links.action-comment-actions {
-  padding-left: 28px;
 }
 
 .issue-data-block .twixi {

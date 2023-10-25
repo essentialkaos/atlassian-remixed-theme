@@ -8,6 +8,7 @@
 2. Add this code as first line of announcement:
 ```html
 <link href="//remixed.kaos.st/jira.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="//remixed.kaos.st/jira.js" defer></script>
 ```
 3. If you don't have any announcement text add this code to announcement:
 ```html
