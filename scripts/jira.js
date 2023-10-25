@@ -24,11 +24,12 @@ function waitForElement(selector) {
 
 /* ************************************************************************** */
 
-waitForElement('.gadget-iframe').then((elm) => {
-  $('.gadget-iframe').on('load', function() {
-    $('.gadget-iframe').contents().find('head').append('<link href="//remixed.kaos.st/jira9.css" rel="stylesheet" type="text/css" />');
-    $('.gadget-iframe').contents().find('head')[0].children[0].remove();
-  })
+waitForElement('iframe.gadget-iframe').then((elm) => {
+  injectStylesToIFrame('iframe.gadget-iframe')
+});
+
+waitForElement('iframe.gadget').then((elm) => {
+  injectStylesToIFrame('iframe.gadget')
 });
 
 JIRA.bind(JIRA.Events.NEW_CONTENT_ADDED, function (e, context, reason) { 
@@ -51,6 +52,13 @@ $(document.body).on("click", function(){
 });
 
 /* ************************************************************************** */
+
+function injectStylesToIFrame(name) {
+  $(name).on('load', function() {
+    $(name).contents().find('head').append('<link href="//remixed.kaos.st/jira9.css" rel="stylesheet" type="text/css" />');
+    $(name).contents().find('head')[0].children[0].remove();
+  })
+}
 
 function colorizeTransitionButtons() {
   $('#opsbar-transitions_more > span.dropdown-text:contains("Incomplete")').parent().addClass('transition-button-incomplete');
