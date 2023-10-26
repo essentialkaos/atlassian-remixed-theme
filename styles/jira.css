@@ -134,9 +134,9 @@ code, kbd, samp,
 }
 
 tt {
-  background: #F5F5F5 none repeat scroll 0% 0%;
+  background: #f5f5f5 none repeat scroll 0% 0%;
   border-radius: 2px;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
   font-variant-ligatures: none;
   padding: 0 3px;
@@ -324,6 +324,12 @@ blockquote,
   color: #999 !important;
 }
 
+.attachment-content .attachment-delete .aui-icon {
+  background-color: #fffc;
+  border-radius: 4px;
+  padding: 2px;
+}
+
 /* EDITOR */
 
 a.wiki-edit-operation > img {
@@ -408,8 +414,8 @@ body:not(.aui-legacy-focus) .aui-header .aui-quicksearch input:focus {
 
 .aui-lozenge.aui-lozenge-subtle.jira-issue-status-lozenge-yellow,
 .aui-lozenge.aui-lozenge-subtle.jira-issue-status-lozenge-inprogress {
-  border-color: #ffe28c;
-  color: #594300;
+  border-color: #e6b219;
+  color: #dba500;
 }
 
 .aui-lozenge.aui-lozenge-subtle.jira-issue-status-lozenge-green,
@@ -419,8 +425,8 @@ body:not(.aui-legacy-focus) .aui-header .aui-quicksearch input:focus {
 }
 
 span.jira-issue-status-lozenge[data-tooltip*="Closed"] {
-  background-color: #AAA !important;
-  border-color: #AAA !important;
+  background-color: #aaa !important;
+  border-color: #aaa !important;
   color: #fff !important;
 }
 
@@ -448,7 +454,7 @@ span.aui-lozenge-subtle {
 }
 
 span.aui-lozenge-subtle[data-tooltip*="Closed"] {
-  color: #777 !important;
+  color: #999 !important;
   border-color: #d5d5d5 !important;
   background-color: #fff !important;
 }
