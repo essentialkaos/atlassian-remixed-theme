@@ -55,7 +55,7 @@ $(document.body).on("click", function(){
 
 function injectStylesToIFrame(name) {
   $(name).on('load', function() {
-    $(name).contents().find('head').append('<link href="//remixed.kaos.st/jira9.css" rel="stylesheet" type="text/css" />');
+    $(name).contents().find('head').append('<link href="//remixed.kaos.st/jira.css" rel="stylesheet" type="text/css" />');
     $(name).contents().find('head')[0].children[0].remove();
   })
 }

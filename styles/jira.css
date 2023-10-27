@@ -173,7 +173,14 @@ div.codeContent pre {
 }
 
 .activity-stream-container .thumbnails img {
+  border-radius: 2px;
+  margin: 0 !important;
+  padding: 4px !important;
   width: calc(100% - 8px);
+}
+
+.activity-stream-container ul.thumbnails li {
+  padding-right: 4px !important;
 }
 
 .activity-item-description .user-content .confluence-embedded-image {
@@ -472,8 +479,8 @@ span.aui-lozenge-subtle[data-tooltip*="Ready For Test"] {
 }
 
 span.aui-lozenge-subtle[data-tooltip*="In Review"] {
-  color: #594300 !important;
-  border-color: #ffe28c !important;
+  color: #0db694 !important;
+  border-color: #96e6d6!important;
   background-color: #fff !important;
 }
 
@@ -496,6 +503,13 @@ span.aui-lozenge-subtle[data-tooltip*="Incomplete"] {
   --aui-btn-text: #3f3002 !important;
 }
 
+.transition-button-inreview {
+  transition: background-color 0.5s, color 0.5s;
+  --aui-btn-bg: #0db694 !important;
+  --aui-btn-border: #0db694 !important;
+  --aui-btn-text: #fff !important;
+}
+
 .transition-button-delayed {
   transition: background-color 0.5s, color 0.5s;
   --aui-btn-bg: #9672be !important;
@@ -503,7 +517,7 @@ span.aui-lozenge-subtle[data-tooltip*="Incomplete"] {
   --aui-btn-text: #fff !important;
 }
 
-.transition-button-ready-for-test {
+.transition-button-readyfortest {
   transition: background-color 0.5s, color 0.5s;
   --aui-btn-bg: #e56550 !important;
   --aui-btn-border: #e56550 !important;
@@ -525,6 +539,11 @@ ul.labels li .lozenge {
   padding: 3px 4px;
 }
 
+a.aui-label {
+  padding: 3px 4px;
+  font-size: 13px;
+}
+
 #opsbar-transitions_more_drop {
   width: 330px;
 }
@@ -544,6 +563,10 @@ ul.labels li .lozenge {
   border-bottom: 1px solid #eee;
 }
 
+.issue-data-block.focused {
+  background-color: #f8f8f8;
+}
+
 .movedcomment {
   border-top: 1px solid #eee;
 }
@@ -552,17 +575,9 @@ ul.labels li .lozenge {
   font-size: 14px;
 }
 
-.issue-data-block .actionContainer {
-  padding: 15px 10px 15px 20px;
-}
-
 .issue-data-block .twixi {
   background: #eee !important;
   outline: 3px #fff solid !important;
-}
-
-.issue-data-block.focused > .actionContainer {
-  background-color: #f8f8f8;
 }
 
 /* THREADED COMMENTS PLUGIN */
@@ -769,12 +784,6 @@ select:not(.select) {
   border-radius: 3px;
 }
 
-/* Comments: Fix comment collapse button position */
-.issue-data-block .aui-iconfont-collapsed,
-.issue-data-block .aui-iconfont-expanded {
-  top: 18px;
-}
-
 /* Comments: Fix bug with showing comment actions */
 .issue-data-block:hover .action-links a, .issue-data-block.focused .action-links a {
   opacity: 1 !important;
@@ -801,6 +810,7 @@ select:not(.select) {
 /* Fix attachment background  */
 #attachment_thumbnails .attachment-thumb,
 #attachment_thumbnails .attachment-thumb .gallery {
+  background-color: #fafafa;
   width: 198px;
 }
 
