@@ -150,7 +150,7 @@ div.codeContent pre {
 }
 
 .aui-tooltip {
-  background-color: #222222d1;
+  background-color: #222222e3;
 }
 
 #log-work > div.form-body > a,
@@ -162,6 +162,10 @@ div.codeContent pre {
   --aui-icon-size: 12px;
   filter: grayscale(1) opacity(0.35);
   padding-bottom: 3px;
+}
+
+.links-list .resolution {
+  color: #777;
 }
 
 /* ACTIVITY STREAM */
@@ -415,14 +419,14 @@ body:not(.aui-legacy-focus) .aui-header .aui-quicksearch input:focus {
 .aui-lozenge.jira-issue-status-lozenge-yellow,
 .aui-lozenge.jira-issue-status-lozenge-inprogress {
   background-color: #ffd351;
-  border-color: #ffd351;
-  color: #3f3002;
+  border-color: #e0c472;
+  color: #5c4500;
 }
 
 .aui-lozenge.aui-lozenge-subtle.jira-issue-status-lozenge-yellow,
 .aui-lozenge.aui-lozenge-subtle.jira-issue-status-lozenge-inprogress {
-  border-color: #e6b219;
-  color: #dba500;
+  border-color: #e0c472;
+  color: #c69400;
 }
 
 .aui-lozenge.aui-lozenge-subtle.jira-issue-status-lozenge-green,
@@ -432,8 +436,8 @@ body:not(.aui-legacy-focus) .aui-header .aui-quicksearch input:focus {
 }
 
 span.jira-issue-status-lozenge[data-tooltip*="Closed"] {
-  background-color: #aaa !important;
-  border-color: #aaa !important;
+  background-color: #888 !important;
+  border-color: #888 !important;
   color: #fff !important;
 }
 
@@ -461,8 +465,8 @@ span.aui-lozenge-subtle {
 }
 
 span.aui-lozenge-subtle[data-tooltip*="Closed"] {
-  color: #999 !important;
-  border-color: #d5d5d5 !important;
+  color: #888 !important;
+  border-color: #dbdbdb !important;
   background-color: #fff !important;
 }
 
@@ -479,8 +483,8 @@ span.aui-lozenge-subtle[data-tooltip*="Ready For Test"] {
 }
 
 span.aui-lozenge-subtle[data-tooltip*="In Review"] {
-  color: #0db694 !important;
-  border-color: #96e6d6!important;
+  color: #00a886 !important;
+  border-color: #a8cec6 !important;
   background-color: #fff !important;
 }
 
