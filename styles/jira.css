@@ -168,6 +168,10 @@ div.codeContent pre {
   color: #777;
 }
 
+.image-wrap > img {
+  max-width: calc(100% - 20px);
+}
+
 /* ACTIVITY STREAM */
 
 .activity-item-description blockquote {
