@@ -103,8 +103,12 @@ hr {
   color: #666;
 }
 
-.aui-theme-default h1 {
+#summary-val {
   font-weight: 100;
+}
+
+div[data-ds--popup="true"] h4 {
+  color: #fff;
 }
 
 .aui-header .aui-icon {
@@ -213,6 +217,7 @@ div.codeContent pre {
     top: 30px;
   }
 }
+
 .qf-required-fields-message {
   text-align: right;
 }
@@ -831,4 +836,9 @@ select:not(.select) {
 /* Threaded Comments Plugin sticky panel fix */
 .block-add-root-comment__sticky {
   width: calc(100% - var(--aui-sidebar-width, 0px) - 20px) !important;
+}
+
+/* Threaded Comments Plugin buttons position fix */
+.comment-item__reply-editor-action {
+  padding-top: 12px;
 }
