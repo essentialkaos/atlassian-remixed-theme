@@ -315,11 +315,11 @@ aui-badge, .aui-badge {
   background-color: #999;
 }
 
-blockquote,
-.action-body blockquote {
-  border-left: 1px solid #ccc;
+blockquote, .action-body blockquote {
+  border-left: 2px solid #ccc;
   color: #666;
   font-style: italic;
+  margin-left: 0;
 }
 
 .status-view, .issueaction-viewworkflow {
