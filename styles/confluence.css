@@ -1,6 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                    EK REMIXED THEME FOR CONFLUENCE 7.x                     */
+/*                    EK REMIXED THEME FOR CONFLUENCE 8.x                     */
+/*                  https://kaos.sh/atlassian-remixed-theme                   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -10,72 +11,63 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
-  src: url(//remixed.kaos.st/fonts/osl.woff2) format('woff2'),
-       url(//remixed.kaos.st/fonts/osl.woff)  format('woff');
+  src: url(//remixed.kaos.st/fonts/osl.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(//remixed.kaos.st/fonts/osr.woff2) format('woff2'),
-       url(//remixed.kaos.st/fonts/osr.woff)  format('woff');
+  src: url(//remixed.kaos.st/fonts/osr.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
-  src: url(//remixed.kaos.st/fonts/osi.woff2) format('woff2'),
-       url(//remixed.kaos.st/fonts/osi.woff)  format('woff');
+  src: url(//remixed.kaos.st/fonts/osi.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: url(//remixed.kaos.st/fonts/osb.woff2) format('woff2'),
-       url(//remixed.kaos.st/fonts/osb.woff)  format('woff');
+  src: url(//remixed.kaos.st/fonts/osb.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 600;
-  src: url(//remixed.kaos.st/fonts/osb.woff2) format('woff2'),
-       url(//remixed.kaos.st/fonts/osb.woff)  format('woff');
+  src: url(//remixed.kaos.st/fonts/osbi.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 400;
-  src: url(//remixed.kaos.st/fonts/jbmr.woff2) format('woff2'),
-       url(//remixed.kaos.st/fonts/jbmr.woff)  format('woff');
+  src: url(//remixed.kaos.st/fonts/jbmr.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: italic;
   font-weight: 400;
-  src: url(//remixed.kaos.st/fonts/jbmi.woff2) format('woff2'),
-       url(//remixed.kaos.st/fonts/jbmi.woff)  format('woff');
+  src: url(//remixed.kaos.st/fonts/jbmi.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 600;
-  src: url(//remixed.kaos.st/fonts/jbmb.woff2) format('woff2'),
-       url(//remixed.kaos.st/fonts/jbmb.woff)  format('woff');
+  src: url(//remixed.kaos.st/fonts/jbmb.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: italic;
   font-weight: 600;
-  src: url(//remixed.kaos.st/fonts/jbmbi.woff2) format('woff2'),
-       url(//remixed.kaos.st/fonts/jbmbi.woff)  format('woff');
+  src: url(//remixed.kaos.st/fonts/jbmbi.woff2) format('woff2');
 }
 
 /* ALL PAGES */
