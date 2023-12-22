@@ -77,22 +77,23 @@ body {
   color: #222;
 }
 
-i, cite, em, var, address, dfn {
-  font-family: "Open Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+i, cite, em, var, address, dfn, #toolbar #format-dropdown a, .aui-tooltip.tipsy {
+  font-family: "Open Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif !important;
 }
 
 strong, b {
-  font-family: "Open Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif !important;
   font-weight: 600;
 }
 
-.syntaxhighlighter a, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table tr, .syntaxhighlighter table tbody, .syntaxhighlighter table thead, .syntaxhighlighter table caption, .syntaxhighlighter textarea {
+code, kbd, pre, .panel .panelContent pre,
+#toolbar #format-dropdown .format-pre a,
+.syntaxhighlighter a, .syntaxhighlighter div,
+.syntaxhighlighter code, .syntaxhighlighter table,
+.syntaxhighlighter table td, .syntaxhighlighter table tr,
+.syntaxhighlighter table tbody, .syntaxhighlighter table thead,
+.syntaxhighlighter table caption, .syntaxhighlighter textarea {
   font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace !important;
-  font-variant-ligatures: none;
-}
-
-code, kbd, pre, .panel .panelContent pre {
-  font-family: "JetBrains Mono", "Consolas", "Bitstream Vera Sans Mono", "Monaco", "Courier New", Courier, monospace;
   font-variant-ligatures: none;
 }
 
@@ -119,12 +120,12 @@ a {
 .wiki-content h5, .panel h5, .panelMacro h5 { font-weight: 300; color: #666; font-size: 1.2em; margin-top: 1.2em; margin-bottom: 0.4em; }
 .wiki-content h6, .panel h6, .panelMacro h6 { font-weight: 300; color: #666; font-size: 1.2em; margin-top: 1.2em, margin-bottom: 0.4em; }
 
-#toolbar #format-dropdown .format-h1 a { font-weight: 300 !important; font-size: 2.4em;  color: #999; margin: 10px 0 10px 0; }
-#toolbar #format-dropdown .format-h2 a { font-weight: 300 !important; border-bottom: none; color: #888; font-size: 2.0em; margin: 8px 0 8px 0; }
-#toolbar #format-dropdown .format-h3 a { font-weight: 300 !important; color: #888; font-size: 1.6em; margin: 6px 0 6px 0; }
-#toolbar #format-dropdown .format-h4 a { font-weight: 300 !important; color: #666; font-size: 1.4em; margin: 4px 0 4px 0; }
-#toolbar #format-dropdown .format-h5 a { font-weight: 300 !important; color: #666; font-size: 1.2em; margin: 4px 0 4px 0; }
-#toolbar #format-dropdown .format-h6 a { font-weight: 300 !important; color: #666; font-size: 1.2em; margin: 4px 0 4px 0; }
+#toolbar #format-dropdown .format-h1 a { font-weight: 300 !important; font-size: 2.4em !important; color: #222; margin: 0 0 4px 0; }
+#toolbar #format-dropdown .format-h2 a { font-weight: 300 !important; border-bottom: none; color: #222; font-size: 2.0em !important; margin: 4px 0 4px 0; }
+#toolbar #format-dropdown .format-h3 a { font-weight: 300 !important; color: #222; font-size: 1.6em !important; margin: 4px 0 4px 0; }
+#toolbar #format-dropdown .format-h4 a { font-weight: 300 !important; color: #222; font-size: 1.4em !important; margin: 4px 0 4px 0; }
+#toolbar #format-dropdown .format-h5 a { font-weight: 300 !important; color: #222; font-size: 1.2em !important; margin: 4px 0 4px 0; }
+#toolbar #format-dropdown .format-h6 a { font-weight: 300 !important; color: #222; font-size: 1.2em !important; margin: 4px 0 4px 0; }
 
 /* TOP MENU */
 
@@ -342,6 +343,10 @@ body:not([data-aui-version^="8"]) #create-page-button.clc-create-dialog-btn .aui
   color: #333;
 }
 
+#space-tools-menu-trigger.aui-button.aui-dropdown2-trigger.active > span {
+  color: #fff;
+}
+
 .aui-dropdown2-trigger:not(.aui-dropdown2-trigger-arrowless):before {
   margin-top: -7px;
 }
@@ -444,7 +449,6 @@ table.attachments .filename-column .filename {
 }
 
 #format-dropdown .dropdown-item {
-  font-family: "Open Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   line-height: 24px;
 }
 
@@ -466,6 +470,17 @@ table.attachments .filename-column .filename {
 
 .aui-dd-parent .aui-dropdown li.active > a > span.aui-icon-small {
   color: #fff !important;
+}
+
+.aui-tooltip.tipsy .tipsy-arrow-n,
+.aui-tooltip.tipsy .tipsy-arrow-s,
+.aui-tooltip.tipsy .tipsy-arrow-e,
+.aui-tooltip.tipsy .tipsy-arrow-w {
+  border-bottom-color: #333;
+}
+
+.aui-tooltip.tipsy .tipsy-inner {
+  background: #333;
 }
 
 /* SPACE CONTRIBUTORS */
